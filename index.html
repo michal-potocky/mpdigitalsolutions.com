@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPDigitalSolutions | AI & Automation Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: {
+                DEFAULT: '#000000',
+                900: '#050505', 
+                800: '#121212', 
+              },
+              bone: {
+                DEFAULT: '#f2f2f0',
+                100: '#ffffff',
+                200: '#e5e5e5',
+                300: '#d4d4d4',
+              },
+              brand: {
+                DEFAULT: '#ccff00', // Acid Green
+                hover: '#b3e600',
+                dark: '#99cc00',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            },
+            backgroundImage: {
+              'grid-white': "linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)",
+              'grid-black': "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)",
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: #050505; 
+        color: #f2f2f0; 
+      }
+      .font-stretch { font-stretch: condensed; }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #050505; }
+      ::-webkit-scrollbar-thumb { background: #333; }
+      ::-webkit-scrollbar-thumb:hover { background: #ccff00; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

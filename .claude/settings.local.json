@@ -1,8 +1,23 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git rebase:*)",
-      "Bash(git restore:*)"
+      "Bash(git fetch:*)",
+      "WebFetch(domain:mpdigitalsolutions.com)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git merge:*)",
+      "Bash(git reset:*)",
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git commit:*)",
+      "Skill(create-prd)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build)",
+      "Bash(git add:*)",
+      "Bash(git -C \"C:\\\\Users\\\\micha\\\\Documents\\\\.projects\\\\website-mpdigitalsolutions\\\\mpdigitalsolutions\" remote -v)",
+      "Bash(git -C \"C:\\\\Users\\\\micha\\\\Documents\\\\.projects\\\\website-mpdigitalsolutions\\\\mpdigitalsolutions\" status)",
+      "Bash(git stash:*)",
+      "Bash(git ls-tree:*)"
     ]
   }
 }

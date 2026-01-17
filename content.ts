@@ -10,7 +10,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     hero: {
       headline: "AUTOMATE USING AI [SCALE] GROW",
-      subheadline: "We build custom n8n automations that save agencies and SMBs 20+ hours a week. Professional, direct, and outcome-oriented.",
+      subheadline: "We integrate custom AI automations for businesses and agencies that bring new clients and save time. Professional, direct, and outcome-oriented.",
       ctaPrimary: "Get a Free Audit",
       ctaSecondary: "See Use Cases",
       bullets: [
@@ -213,7 +213,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     hero: {
       headline: "AUTOMATE USING AI [SCALE] GROW",
-      subheadline: "Tvoríme AI automatizácie na mieru, ktoré prinášajú potencionálnych zákazníkov a šetria agentúram a firmám 20+ hodín týždenne. Profesionálne, priamo a s dôrazom na výsledky.",
+      subheadline: "Integrujeme AI automatizácie na mieru pre firmy a agentúry ktoré prinášajú nových klientov a šetria čas. Profesionálne, priamo a s dôrazom na výsledky.",
       ctaPrimary: "Získať bezplatný audit",
       ctaSecondary: "Pozrieť príklady",
       bullets: [

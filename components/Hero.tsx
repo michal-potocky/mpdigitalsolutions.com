@@ -11,13 +11,23 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const headlineParts = content.headline.split('.');
+  // Parse headline to highlight text in [brackets] with brand color (brackets hidden)
+  const renderHeadline = (text: string) => {
+    const parts = text.split(/(\[[^\]]+\])/g);
+    return parts.map((part, i) => {
+      if (part.startsWith('[') && part.endsWith(']')) {
+        // Remove brackets and show in brand color
+        return <span key={i} className="text-brand">{part.slice(1, -1)}</span>;
+      }
+      return <span key={i}>{part}</span>;
+    });
+  };
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 bg-black-900 border-b border-gray-800">
       {/* Technical Grid Background */}
       <div className="absolute inset-0 bg-grid-white opacity-[0.05] pointer-events-none"></div>
-      
+
       {/* Vertical Lines */}
       <div className="absolute inset-0 max-w-[1400px] mx-auto border-x border-gray-800/50 pointer-events-none hidden md:block">
         <div className="absolute left-1/3 h-full w-px bg-gray-800/30"></div>
@@ -25,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid lg:grid-cols-12 gap-12 items-end pb-20">
-        
+
         {/* Left Content */}
         <div className="lg:col-span-8">
           {/* Tag */}
@@ -36,11 +46,7 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
           </div>
 
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-bold text-white tracking-tighter leading-[0.9] mb-10 uppercase">
-            {headlineParts[0]}
-            <br />
-            <span className="text-brand">
-              [{headlineParts[1]} {headlineParts[2]}]
-            </span>
+            {renderHeadline(content.headline)}
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl font-light leading-relaxed">

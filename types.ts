@@ -47,6 +47,11 @@ export interface Content {
       cta: string;
     }[];
   };
+  technologies: {
+    title: string;
+    subtitle: string;
+    items: { name: string; description: string }[];
+  };
   howItWorks: {
     title: string;
     phase1: {
@@ -66,6 +71,12 @@ export interface Content {
       subtitle: string;
       steps: string[];
     };
+  };
+  youtube: {
+    title: string;
+    subtitle: string;
+    videoIds: string[];
+    comingSoon: string;
   };
   faq: {
     title: string;

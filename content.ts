@@ -89,6 +89,19 @@ export const content: Record<'en' | 'sk', Content> = {
         }
       ]
     },
+    technologies: {
+      title: "Our Tech Stack",
+      subtitle: "We use industry-leading tools to build reliable, scalable automations.",
+      items: [
+        { name: "n8n", description: "Automation" },
+        { name: "OpenAI", description: "AI/LLM" },
+        { name: "Claude", description: "AI/LLM" },
+        { name: "Google Workspace", description: "Productivity" },
+        { name: "Slack", description: "Communication" },
+        { name: "HubSpot", description: "CRM" },
+        { name: "Supabase", description: "Database" }
+      ]
+    },
     howItWorks: {
       title: "How We Work",
       phase1: {
@@ -119,6 +132,12 @@ export const content: Record<'en' | 'sk', Content> = {
           "Maintenance & Improvements (Optional)"
         ]
       }
+    },
+    youtube: {
+      title: "Learn From Our Videos",
+      subtitle: "Watch tutorials and insights on automation and AI.",
+      videoIds: [],
+      comingSoon: "Videos coming soon! Subscribe to be notified."
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -273,6 +292,19 @@ export const content: Record<'en' | 'sk', Content> = {
         }
       ]
     },
+    technologies: {
+      title: "Náš Tech Stack",
+      subtitle: "Používame špičkové nástroje na budovanie spoľahlivých a škálovateľných automatizácií.",
+      items: [
+        { name: "n8n", description: "Automatizácia" },
+        { name: "OpenAI", description: "AI/LLM" },
+        { name: "Claude", description: "AI/LLM" },
+        { name: "Google Workspace", description: "Produktivita" },
+        { name: "Slack", description: "Komunikácia" },
+        { name: "HubSpot", description: "CRM" },
+        { name: "Supabase", description: "Databáza" }
+      ]
+    },
     howItWorks: {
       title: "Ako pracujeme",
       phase1: {
@@ -303,6 +335,12 @@ export const content: Record<'en' | 'sk', Content> = {
           "Údržba a zlepšovanie (voliteľné)"
         ]
       }
+    },
+    youtube: {
+      title: "Učte sa z našich videí",
+      subtitle: "Sledujte tutoriály a postrehy o automatizácii a AI.",
+      videoIds: [],
+      comingSoon: "Videá čoskoro! Prihláste sa na odber."
     },
     faq: {
       title: "Často kladené otázky",

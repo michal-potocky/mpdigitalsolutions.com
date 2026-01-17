@@ -65,7 +65,7 @@ export const content: Record<'en' | 'sk', Content> = {
           title: "Lead Management",
           sector: "Agencies & Local Services",
           problem: "Response to a missed call after 5 minutes = 80% loss of potential customer. Without AI prioritization, you don't know which inquiry is urgent.",
-          solution: "Missed call/Email/Form → Auto-response within 2 min → AI prioritization → CRM → Sales rep notified.",
+          solution: "Missed call/Email/Form → AI segmentation → Auto-response within 2 min → CRM → Sales rep notified.",
           result: "Typical Result: 100% lead capture and <5 min response time."
         },
         {
@@ -263,7 +263,7 @@ export const content: Record<'en' | 'sk', Content> = {
           title: "Manažment Záujemcov",
           sector: "Agentúry a Služby",
           problem: "Reakcia na zmeškaný hovor nad 5 minút = 80% strata potenciálneho zákazníka. Bez AI prioritizácie neviete, ktorý dopyt je urgentný.",
-          solution: "Zmeškaný hovor/Email/Formulár → Automatická odpoveď do 2 min → AI prioritizácia → CRM → Kontaktovanie obchodníka.",
+          solution: "Zmeškaný hovor/Email/Formulár → AI segmentácia → Automatická odpoveď do 2 min → CRM → Kontaktovanie obchodníka.",
           result: "Typický výsledok: 100% zachytenie záujemcov a reakcia <2 min."
         },
         {

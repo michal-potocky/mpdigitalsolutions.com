@@ -213,7 +213,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     hero: {
       headline: "AUTOMATE USING AI [SCALE] GROW",
-      subheadline: "Tvoríme n8n automatizácie na mieru, ktoré šetria agentúram a firmám 20+ hodín týždenne. Profesionálne, priamo a s dôrazom na výsledky.",
+      subheadline: "Tvoríme AI automatizácie na mieru, ktoré prinášajú potencionálnych zákazníkov a šetria agentúram a firmám 20+ hodín týždenne. Profesionálne, priamo a s dôrazom na výsledky.",
       ctaPrimary: "Získať bezplatný audit",
       ctaSecondary: "Pozrieť príklady",
       bullets: [

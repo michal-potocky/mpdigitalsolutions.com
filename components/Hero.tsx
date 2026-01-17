@@ -11,13 +11,13 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Parse headline to highlight text in [brackets] with brand color (brackets hidden)
+  // Parse headline to highlight text in [brackets] with brand color (brackets visible)
   const renderHeadline = (text: string) => {
     const parts = text.split(/(\[[^\]]+\])/g);
     return parts.map((part, i) => {
       if (part.startsWith('[') && part.endsWith(']')) {
-        // Remove brackets and show in brand color
-        return <span key={i} className="text-brand">{part.slice(1, -1)}</span>;
+        // Show brackets in brand color
+        return <span key={i} className="text-brand">{part}</span>;
       }
       return <span key={i}>{part}</span>;
     });

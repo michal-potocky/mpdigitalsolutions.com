@@ -123,17 +123,6 @@ export const content: Record<'en' | 'sk', Content> = {
       comingSoon: "Videos coming soon! Subscribe to be notified.",
       videoIds: []
     },
-    pricing: {
-      title: "Transparent Pricing",
-      subtitle: "No hidden fees. Every project starts with a free audit.",
-      cta: "Get a custom quote",
-      items: [
-        { name: "Free Audit", price: "0 €", description: "20-min call + PDF report with recommendations" },
-        { name: "Simple Automation", price: "From 300 €", description: "Single workflow, 1-2 integrations" },
-        { name: "Complex Workflow", price: "From 800 €", description: "Multi-step automation with AI" },
-        { name: "Monthly Support", price: "From 100 €/mo", description: "Monitoring, updates, priority support" }
-      ]
-    },
     faq: {
       title: "Frequently Asked Questions",
       items: [
@@ -179,12 +168,6 @@ export const content: Record<'en' | 'sk', Content> = {
         },
         tools: "Current Tools (e.g., HubSpot, Slack)",
         toolsPlaceholder: "List your main software stack...",
-        urgency: "Timeline / Urgency",
-        urgencyOptions: {
-          week: "This week",
-          month: "This month",
-          unsure: "Not sure"
-        },
         message: "How can we help? (Brief description)",
         consent: "I agree to the processing of my personal data for the purpose of the audit."
       },
@@ -321,17 +304,6 @@ export const content: Record<'en' | 'sk', Content> = {
       comingSoon: "Videá už čoskoro! Prihláste sa na odber.",
       videoIds: []
     },
-    pricing: {
-      title: "Transparentné ceny",
-      subtitle: "Žiadne skryté poplatky. Každý projekt začína bezplatným auditom.",
-      cta: "Získať cenovú ponuku",
-      items: [
-        { name: "Bezplatný Audit", price: "0 €", description: "20-min hovor + PDF report s odporúčaniami" },
-        { name: "Jednoduchá Automatizácia", price: "Od 300 €", description: "Jeden workflow, 1-2 integrácie" },
-        { name: "Komplexný Workflow", price: "Od 800 €", description: "Viacstupňová automatizácia s AI" },
-        { name: "Mesačná Podpora", price: "Od 100 €/mes", description: "Monitoring, aktualizácie, prioritná podpora" }
-      ]
-    },
     faq: {
       title: "Často kladené otázky",
       items: [
@@ -370,19 +342,13 @@ export const content: Record<'en' | 'sk', Content> = {
         company: "Názov firmy",
         topic: "Téma záujmu",
         topicOptions: {
-          lead: "Lead Management",
+          lead: "Správa dopytov",
           invoice: "Automatizácia faktúr",
           crm: "CRM synchronizácia",
           other: "Iné / Všeobecný audit"
         },
         tools: "Súčasné nástroje (napr. HubSpot, Slack)",
         toolsPlaceholder: "Vypíšte váš hlavný softvér...",
-        urgency: "Časový horizont",
-        urgencyOptions: {
-          week: "Tento týždeň",
-          month: "Tento mesiac",
-          unsure: "Neviem presne"
-        },
         message: "Ako môžeme pomôcť? (Krátky popis)",
         consent: "Súhlasím so spracovaním osobných údajov pre účely auditu."
       },

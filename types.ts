@@ -75,16 +75,6 @@ export interface Content {
     comingSoon: string;
     videoIds: string[];
   };
-  pricing: {
-    title: string;
-    subtitle: string;
-    cta: string;
-    items: {
-      name: string;
-      price: string;
-      description: string;
-    }[];
-  };
   faq: {
     title: string;
     items: { q: string; a: string }[];
@@ -105,12 +95,6 @@ export interface Content {
       };
       tools: string;
       toolsPlaceholder: string;
-      urgency: string;
-      urgencyOptions: {
-        week: string;
-        month: string;
-        unsure: string;
-      };
       message: string;
       consent: string;
     };

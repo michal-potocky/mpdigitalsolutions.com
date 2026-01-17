@@ -6,6 +6,7 @@ import { Language } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Proof from './components/Proof';
+import Technologies from './components/Technologies';
 import UseCases from './components/UseCases';
 import HowItWorks from './components/HowItWorks';
 import FAQ from './components/FAQ';
@@ -30,6 +31,7 @@ const App: React.FC = () => {
       <main className="relative">
         <Hero content={content.hero} />
         <Proof content={content.proof} />
+        <Technologies content={content.technologies} />
         <UseCases content={content.useCases} />
         <HowItWorks content={content.howItWorks} />
         <FAQ content={content.faq} />

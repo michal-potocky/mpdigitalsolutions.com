@@ -39,10 +39,10 @@ export const content: Record<'en' | 'sk', Content> = {
       cards: [
         {
           title: "Free Automation Audit",
-          description: "A 20-minute call where we analyze your workflows and show you exactly where automation can save you time and money.",
-          features: ["20-min video call", "Live screen analysis of your processes", "Immediate actionable recommendations"],
+          description: "A two-step process where we first determine if automation makes sense for you, then prepare a concrete proposal.",
+          features: ["Step 1: 15-min call – we assess if automation will bring measurable results", "Step 2: 60-min video workshop – we analyze your processes in detail"],
           deliverablesLabel: "What you get:",
-          deliverables: "Custom PDF report: Your top 3 time-wasters, specific automation solutions, estimated time savings, and transparent pricing range.",
+          deliverables: "After workshop: PDF with process analysis, solution proposal, and quote within 3 business days.",
           cta: "Book Free Audit",
           highlight: false
         },
@@ -237,10 +237,10 @@ export const content: Record<'en' | 'sk', Content> = {
       cards: [
         {
           title: "Bezplatný Audit Automatizácie",
-          description: "20-minútový videohovor, kde spolu prejdeme vaše procesy a ukážeme vám presne, kde vám automatizácia ušetrí čas a peniaze.",
-          features: ["20-min videohovor", "Živá analýza vašich procesov", "Okamžité odporúčania na zlepšenie"],
+          description: "Dvojkrokový proces, kde najprv zistíme, či má automatizácia pre vás zmysel, a potom vám pripravíme konkrétny návrh.",
+          features: ["Krok 1: 15-min telefonát – zistíme, či automatizácia prinesie efekt", "Krok 2: 60-min video workshop – prejdeme vaše procesy detailne"],
           deliverablesLabel: "Čo získate:",
-          deliverables: "PDF report na mieru: Vaše 3 najväčšie žrúty času, konkrétne riešenia, odhad úspory času a transparentný cenový rozsah.",
+          deliverables: "Po workshope: PDF s analýzou procesov, návrh riešenia a cenová ponuka do 3 pracovných dní.",
           cta: "Objednať audit zdarma",
           highlight: false
         },

@@ -80,24 +80,15 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             <input type="text" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="Company Ltd." />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-             <div className="space-y-2">
-              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.topic}</label>
-              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
-                <option value="lead">{content.fields.topicOptions.lead}</option>
-                <option value="invoice">{content.fields.topicOptions.invoice}</option>
-                <option value="crm">{content.fields.topicOptions.crm}</option>
-                <option value="other">{content.fields.topicOptions.other}</option>
-              </select>
-            </div>
-             <div className="space-y-2">
-              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.urgency}</label>
-              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
-                <option value="week">{content.fields.urgencyOptions.week}</option>
-                <option value="month">{content.fields.urgencyOptions.month}</option>
-                <option value="unsure">{content.fields.urgencyOptions.unsure}</option>
-              </select>
-            </div>
+          <div className="space-y-2">
+            <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.topic}</label>
+            <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+              <option value="lead">{content.fields.topicOptions.lead}</option>
+              <option value="invoice">{content.fields.topicOptions.invoice}</option>
+              <option value="crm">{content.fields.topicOptions.crm}</option>
+              <option value="reporting">{content.fields.topicOptions.reporting}</option>
+              <option value="other">{content.fields.topicOptions.other}</option>
+            </select>
           </div>
 
           <div className="space-y-2">

@@ -94,16 +94,11 @@ export interface Content {
         lead: string;
         invoice: string;
         crm: string;
+        reporting: string;
         other: string;
       };
       tools: string;
       toolsPlaceholder: string;
-      urgency: string;
-      urgencyOptions: {
-        week: string;
-        month: string;
-        unsure: string;
-      };
       message: string;
       consent: string;
     };

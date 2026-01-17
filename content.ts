@@ -39,30 +39,30 @@ export const content: Record<'en' | 'sk', Content> = {
         {
           title: "Lead Management",
           sector: "Agencies & Local Services",
-          problem: "Leads get lost in email, slow response times, manual data entry into CRM.",
-          solution: "Automated capture from forms → AI Qualification → CRM Entry → Slack Notification.",
-          result: "Typical Result: 100% lead capture and <5 min response time."
+          problem: "After 5 minutes, chance of reaching a lead drops by 10x. 78% of customers buy from whoever responds first.",
+          solution: "Form submission → AI qualifies → CRM entry → Team notified instantly.",
+          result: "Every lead in CRM within seconds. Instant team notification."
         },
         {
           title: "Document Extraction",
           sector: "E-commerce & Operations",
-          problem: "Hours spent typing data from PDF invoices and receipts into Excel/ERP.",
-          solution: "AI Vision (LLM) extracts line items, dates, and vendors → Pushes to accounting tool.",
-          result: "Typical Result: 80% reduction in manual data entry."
+          problem: "Manually copying invoice data to accounting software.",
+          solution: "AI reads PDF → Extracts vendor, items, amounts → Sends to your system.",
+          result: "Invoices processed automatically. Manual entry eliminated."
         },
         {
           title: "CRM & Workspace Automation",
           sector: "Real Estate & Sales",
-          problem: "Messy client data, missed follow-ups, disparate tools (Calendar vs CRM).",
-          solution: "Two-way sync between Google Workspace and CRM. Automated follow-up sequences.",
-          result: "Typical Result: Data consistency across all platforms."
+          problem: "Client info scattered across Gmail, Calendar, CRM. Missed follow-ups.",
+          solution: "Two-way sync between Google Workspace and CRM. Automated reminders.",
+          result: "One source of truth. No more missed follow-ups."
         },
         {
           title: "Reporting Automation",
           sector: "Marketing Agencies",
-          problem: "Copy-pasting data from Ads Manager, Analytics, and Sheets for client reports.",
-          solution: "Scheduled aggregation of metrics → AI Summary generation → PDF Report emailed.",
-          result: "Typical Result: Reports generated instantly every Monday."
+          problem: "Weekly copy-paste from Ads Manager, Analytics, spreadsheets.",
+          solution: "Scheduled data pull → AI generates summary → PDF delivered to inbox.",
+          result: "Reports ready automatically. Every week. On time."
         }
       ]
     },
@@ -90,8 +90,8 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     technologies: {
-      title: "Our Tech Stack",
-      subtitle: "We use industry-leading tools to build reliable, scalable automations.",
+      title: "We Integrate With Your Tools",
+      subtitle: "Connect the software you already use. No need to change your workflow — we build on top of it.",
       items: [
         { name: "n8n", description: "Automation" },
         { name: "OpenAI", description: "AI/LLM" },
@@ -144,7 +144,7 @@ export const content: Record<'en' | 'sk', Content> = {
       items: [
         {
           q: "How much does it cost?",
-          a: "We do not offer fixed pricing on the site because every workflow is unique. After the Free Audit, you will receive a rough estimate range. Small prototypes often start lower to build trust."
+          a: "We calculate your potential benefit first — time saved, errors eliminated, faster response times. Then we design a solution where the cost is a fraction of the benefit. Typical projects start from €1,000. The first audit call is free — we'll show you exactly what's possible and what it would cost."
         },
         {
           q: "How long does it take?",
@@ -177,19 +177,14 @@ export const content: Record<'en' | 'sk', Content> = {
         company: "Company Name",
         topic: "Interested Topic",
         topicOptions: {
-          lead: "Lead Management",
-          invoice: "Invoice/Doc Automation",
-          crm: "CRM Cleanup/Sync",
-          other: "Other / General Audit"
+          lead: "Lead Capture & Response Automation",
+          invoice: "Invoice & Document Processing",
+          crm: "CRM & Workspace Sync",
+          reporting: "Reporting Automation",
+          other: "Other / Not Sure Yet"
         },
         tools: "Current Tools (e.g., HubSpot, Slack)",
         toolsPlaceholder: "List your main software stack...",
-        urgency: "Timeline / Urgency",
-        urgencyOptions: {
-          week: "This week",
-          month: "This month",
-          unsure: "Not sure"
-        },
         message: "How can we help? (Brief description)",
         consent: "I agree to the processing of my personal data for the purpose of the audit."
       },
@@ -242,30 +237,30 @@ export const content: Record<'en' | 'sk', Content> = {
         {
           title: "Manažment Leadov",
           sector: "Agentúry a Služby",
-          problem: "Leady sa strácajú v emailoch, pomalé reakcie, manuálne prepisovanie do CRM.",
-          solution: "Automatický zber z formulárov → AI Kvalifikácia → Zápis do CRM → Notifikácia na Slack.",
-          result: "Typický výsledok: 100% zachytenie leadov a reakcia <5 min."
+          problem: "Po 5 minútach šanca zastihnúť lead klesá 10x. 78% zákazníkov nakúpi od toho, kto odpovie prvý.",
+          solution: "Odoslanie formulára → AI kvalifikuje → Zápis do CRM → Tím notifikovaný okamžite.",
+          result: "Každý lead v CRM do pár sekúnd. Okamžitá notifikácia tímu."
         },
         {
           title: "Extrakcia Dokumentov",
           sector: "E-commerce a Operatíva",
-          problem: "Hodiny strávené prepisovaním dát z PDF faktúr a bločkov do Excelu/ERP.",
-          solution: "AI Vision (LLM) extrahuje položky, dátumy a dodávateľov → Odošle do účtovníctva.",
-          result: "Typický výsledok: 80% zníženie manuálneho zadávania dát."
+          problem: "Manuálne prepisovanie dát z faktúr do účtovného softvéru.",
+          solution: "AI číta PDF → Extrahuje dodávateľa, položky, sumy → Posiela do vášho systému.",
+          result: "Faktúry spracované automaticky. Manuálne zadávanie eliminované."
         },
         {
           title: "CRM a Workspace Automatizácia",
           sector: "Reality a Obchod",
-          problem: "Neporiadok v dátach klientov, zmeškané follow-upy, nespojené nástroje.",
-          solution: "Obojsmerná synchronizácia Google Workspace a CRM. Automatické sekvencie správ.",
-          result: "Typický výsledok: Konzistentné dáta naprieč všetkými platformami."
+          problem: "Informácie o klientoch roztrúsené v Gmaili, Kalendári, CRM. Zmeškané follow-upy.",
+          solution: "Obojsmerná synchronizácia Google Workspace a CRM. Automatické pripomienky.",
+          result: "Jeden zdroj pravdy. Žiadne zmeškané follow-upy."
         },
         {
           title: "Automatizácia Reportingu",
           sector: "Marketingové Agentúry",
-          problem: "Kopírovanie dát z Ads Manager, Analytics a Tabuliek pre klientske reporty.",
-          solution: "Plánovaná agregácia metrík → Generovanie zhrnutia cez AI → Odoslanie PDF emailom.",
-          result: "Typický výsledok: Reporty vygenerované okamžite každý pondelok."
+          problem: "Týždenné kopírovanie z Ads Manager, Analytics, tabuliek.",
+          solution: "Plánovaný zber dát → AI generuje zhrnutie → PDF doručené do schránky.",
+          result: "Reporty pripravené automaticky. Každý týždeň. Načas."
         }
       ]
     },
@@ -293,8 +288,8 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     technologies: {
-      title: "Náš Tech Stack",
-      subtitle: "Používame špičkové nástroje na budovanie spoľahlivých a škálovateľných automatizácií.",
+      title: "Integrujeme s vašimi nástrojmi",
+      subtitle: "Prepojíme softvér, ktorý už používate. Nemusíte meniť workflow — staviame na ňom.",
       items: [
         { name: "n8n", description: "Automatizácia" },
         { name: "OpenAI", description: "AI/LLM" },
@@ -347,7 +342,7 @@ export const content: Record<'en' | 'sk', Content> = {
       items: [
         {
           q: "Koľko to stojí?",
-          a: "Na stránke neuvádzame fixné ceny, pretože každý workflow je jedinečný. Po bezplatnom audite dostanete hrubý cenový odhad. Menšie prototypy často začínajú na nižších sumách pre vybudovanie dôvery."
+          a: "Najprv vypočítame váš potenciálny prínos — ušetrený čas, eliminované chyby, rýchlejšie reakcie. Potom navrhneme riešenie, kde náklady sú zlomkom prínosu. Typické projekty začínajú od 1 000 €. Prvý audit je zadarmo — ukážeme vám presne, čo je možné a koľko by to stálo."
         },
         {
           q: "Ako dlho to trvá?",
@@ -380,19 +375,14 @@ export const content: Record<'en' | 'sk', Content> = {
         company: "Názov firmy",
         topic: "Téma záujmu",
         topicOptions: {
-          lead: "Lead Management",
-          invoice: "Automatizácia faktúr",
-          crm: "CRM synchronizácia",
-          other: "Iné / Všeobecný audit"
+          lead: "Zachytávanie leadov a automatizácia odpovedí",
+          invoice: "Spracovanie faktúr a dokumentov",
+          crm: "CRM a Workspace synchronizácia",
+          reporting: "Automatizácia reportingu",
+          other: "Iné / Zatiaľ neviem"
         },
         tools: "Súčasné nástroje (napr. HubSpot, Slack)",
         toolsPlaceholder: "Vypíšte váš hlavný softvér...",
-        urgency: "Časový horizont",
-        urgencyOptions: {
-          week: "Tento týždeň",
-          month: "Tento mesiac",
-          unsure: "Neviem presne"
-        },
         message: "Ako môžeme pomôcť? (Krátky popis)",
         consent: "Súhlasím so spracovaním osobných údajov pre účely auditu."
       },

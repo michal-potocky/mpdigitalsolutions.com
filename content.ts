@@ -10,8 +10,8 @@ export const content: Record<'en' | 'sk', Content> = {
       contact: "Get Free Audit",
     },
     hero: {
-      headline: "Automate. Scale Grow.",
-      subheadline: "We build custom n8n automations that save agencies and SMBs 20+ hours a week. Professional, direct, and outcome-oriented.",
+      headline: "AUTOMATE USING AI|[SCALE] GROW",
+      subheadline: "We integrate AI automations to agencies and SMBs that brings new customers and saves 20+ hours a week. Professional, direct, and outcome-oriented.",
       ctaPrimary: "Get a Free Audit",
       ctaSecondary: "See Use Cases",
       bullets: [
@@ -208,8 +208,8 @@ export const content: Record<'en' | 'sk', Content> = {
       contact: "Získať audit",
     },
     hero: {
-      headline: "Automate. Scale Grow.",
-      subheadline: "Tvoríme n8n automatizácie na mieru, ktoré šetria agentúram a firmám 20+ hodín týždenne. Profesionálne, priamo a s dôrazom na výsledky.",
+      headline: "AUTOMATIZUJ S AI|[ŠKÁLUJ] RASTI",
+      subheadline: "Integrujeme AI automatizácie pre agentúry a firmy, ktoré prinášajú nových zákazníkov a šetria 20+ hodín týždenne. Profesionálne, priamo a s dôrazom na výsledky.",
       ctaPrimary: "Získať bezplatný audit",
       ctaSecondary: "Pozrieť príklady",
       bullets: [

@@ -5,7 +5,7 @@ export const content: Record<'en' | 'sk', Content> = {
     nav: {
       services: "Services",
       useCases: "Use Cases",
-      process: "How it Works",
+      process: "How It Works",
       faq: "FAQ",
       contact: "Get Free Audit",
     },
@@ -38,11 +38,11 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "Two ways to engage. Start small or go full automation.",
       cards: [
         {
-          title: "Free Audit (Lead Magnet)",
-          description: "A 15-minute call to analyze your current bottlenecks and identify automation potential.",
-          features: ["15-min Discovery Call", "Process Analysis Checklist", "Feasibility Check"],
-          deliverablesLabel: "You receive:",
-          deliverables: "1-Page PDF Summary: Top 3 Bottlenecks, 3 Automation Opportunities, Mini Roadmap & Estimate Range.",
+          title: "Free Automation Audit",
+          description: "A 20-minute call where we analyze your workflows and show you exactly where automation can save you time and money.",
+          features: ["20-min video call", "Live screen analysis of your processes", "Immediate actionable recommendations"],
+          deliverablesLabel: "What you get:",
+          deliverables: "Custom PDF report: Your top 3 time-wasters, specific automation solutions, estimated time savings, and transparent pricing range.",
           cta: "Book Free Audit",
           highlight: false
         },
@@ -92,17 +92,47 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     howItWorks: {
-      title: "How We Work",
+      title: "How It Works",
       phaseA: {
-        title: "PHASE A: R&D",
-        subtitle: "Low risk, high clarity.",
-        steps: ["Specifications & Planning", "Wireframe / Logic Prototype", "Detailed Estimate & Timeline"]
+        title: "PHASE A: Analysis",
+        subtitle: "We understand your business and find the solution.",
+        steps: ["Free audit & process analysis", "Solution design & prototype", "Quote and timeline"]
       },
       phaseB: {
         title: "PHASE B: Delivery",
-        subtitle: "Execution and Handoff.",
-        steps: ["Build & Integration", "Rigorous Testing", "Deployment & Training", "Maintenance"]
+        subtitle: "We build, test, and deploy.",
+        steps: ["Custom automation development", "Testing & fine-tuning", "Production deployment", "Training & support"]
       }
+    },
+    technologies: {
+      title: "Technologies We Use",
+      subtitle: "We work with modern tools to deliver reliable automation solutions.",
+      items: [
+        { name: "n8n", description: "Workflow automation platform" },
+        { name: "OpenAI", description: "AI & language models" },
+        { name: "Claude", description: "Advanced AI assistant" },
+        { name: "Google Workspace", description: "Productivity suite" },
+        { name: "Slack", description: "Team communication" },
+        { name: "HubSpot", description: "CRM & marketing" },
+        { name: "Supabase", description: "Database & backend" }
+      ]
+    },
+    youtube: {
+      title: "Learn & Watch",
+      subtitle: "Tutorials, tips, and automation insights from our YouTube channel.",
+      comingSoon: "Videos coming soon! Subscribe to be notified.",
+      videoIds: []
+    },
+    pricing: {
+      title: "Transparent Pricing",
+      subtitle: "No hidden fees. Every project starts with a free audit.",
+      cta: "Get a custom quote",
+      items: [
+        { name: "Free Audit", price: "0 €", description: "20-min call + PDF report with recommendations" },
+        { name: "Simple Automation", price: "From 300 €", description: "Single workflow, 1-2 integrations" },
+        { name: "Complex Workflow", price: "From 800 €", description: "Multi-step automation with AI" },
+        { name: "Monthly Support", price: "From 100 €/mo", description: "Monitoring, updates, priority support" }
+      ]
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -173,7 +203,7 @@ export const content: Record<'en' | 'sk', Content> = {
     nav: {
       services: "Služby",
       useCases: "Príklady použitia",
-      process: "Ako pracujeme",
+      process: "Ako to funguje",
       faq: "FAQ",
       contact: "Získať audit",
     },
@@ -206,11 +236,11 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "Dva spôsoby spolupráce. Začnite v malom alebo komplexne.",
       cards: [
         {
-          title: "Bezplatný Audit (Lead Magnet)",
-          description: "15-minútový hovor na analýzu vašich úzkych miest a identifikáciu potenciálu automatizácie.",
-          features: ["15-min Discovery hovor", "Checklist analýzy procesov", "Kontrola realizovateľnosti"],
-          deliverablesLabel: "Dostanete:",
-          deliverables: "1-stranové zhrnutie (PDF): Top 3 úzke miesta, 3 príležitosti na automatizáciu, mini roadmapa a cenový odhad.",
+          title: "Bezplatný Audit Automatizácie",
+          description: "20-minútový videohovor, kde spolu prejdeme vaše procesy a ukážeme vám presne, kde vám automatizácia ušetrí čas a peniaze.",
+          features: ["20-min videohovor", "Živá analýza vašich procesov", "Okamžité odporúčania na zlepšenie"],
+          deliverablesLabel: "Čo získate:",
+          deliverables: "PDF report na mieru: Vaše 3 najväčšie žrúty času, konkrétne riešenia, odhad úspory času a transparentný cenový rozsah.",
           cta: "Objednať audit zdarma",
           highlight: false
         },
@@ -260,17 +290,47 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     howItWorks: {
-      title: "Ako pracujeme",
+      title: "Ako to funguje",
       phaseA: {
-        title: "FÁZA A: R&D",
-        subtitle: "Nízke riziko, vysoká jasnosť.",
-        steps: ["Špecifikácia a Plánovanie", "Wireframe / Prototyp logiky", "Detailný odhad a časový plán"]
+        title: "FÁZA A: Analýza",
+        subtitle: "Pochopíme váš biznis a nájdeme riešenie.",
+        steps: ["Bezplatný audit a analýza procesov", "Návrh riešenia a prototyp", "Cenová ponuka a časový plán"]
       },
       phaseB: {
-        title: "FÁZA B: Dodanie",
-        subtitle: "Exekúcia a odovzdanie.",
-        steps: ["Vývoj a Integrácia", "Dôkladné testovanie", "Nasadenie a zaškolenie", "Údržba"]
+        title: "FÁZA B: Realizácia",
+        subtitle: "Postavíme, otestujeme a nasadíme.",
+        steps: ["Vývoj automatizácie na mieru", "Testovanie a ladenie", "Nasadenie do produkcie", "Zaškolenie a podpora"]
       }
+    },
+    technologies: {
+      title: "Technológie ktoré používame",
+      subtitle: "Pracujeme s modernými nástrojmi pre spoľahlivé automatizačné riešenia.",
+      items: [
+        { name: "n8n", description: "Platforma pre automatizáciu" },
+        { name: "OpenAI", description: "AI a jazykové modely" },
+        { name: "Claude", description: "Pokročilý AI asistent" },
+        { name: "Google Workspace", description: "Produktivita a spolupráca" },
+        { name: "Slack", description: "Tímová komunikácia" },
+        { name: "HubSpot", description: "CRM a marketing" },
+        { name: "Supabase", description: "Databáza a backend" }
+      ]
+    },
+    youtube: {
+      title: "Učte sa s nami",
+      subtitle: "Tutoriály, tipy a automatizačné novinky z nášho YouTube kanála.",
+      comingSoon: "Videá už čoskoro! Prihláste sa na odber.",
+      videoIds: []
+    },
+    pricing: {
+      title: "Transparentné ceny",
+      subtitle: "Žiadne skryté poplatky. Každý projekt začína bezplatným auditom.",
+      cta: "Získať cenovú ponuku",
+      items: [
+        { name: "Bezplatný Audit", price: "0 €", description: "20-min hovor + PDF report s odporúčaniami" },
+        { name: "Jednoduchá Automatizácia", price: "Od 300 €", description: "Jeden workflow, 1-2 integrácie" },
+        { name: "Komplexný Workflow", price: "Od 800 €", description: "Viacstupňová automatizácia s AI" },
+        { name: "Mesačná Podpora", price: "Od 100 €/mes", description: "Monitoring, aktualizácie, prioritná podpora" }
+      ]
     },
     faq: {
       title: "Často kladené otázky",

@@ -9,6 +9,9 @@ import Proof from './components/Proof';
 import Services from './components/Services';
 import UseCases from './components/UseCases';
 import HowItWorks from './components/HowItWorks';
+import Technologies from './components/Technologies';
+import YouTubeSection from './components/YouTubeSection';
+import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -32,8 +35,11 @@ const App: React.FC = () => {
         <Hero content={content.hero} />
         <Proof content={content.proof} />
         <Services content={content.services} />
+        <Technologies content={content.technologies} />
         <UseCases content={content.useCases} />
+        <Pricing content={content.pricing} />
         <HowItWorks content={content.howItWorks} />
+        <YouTubeSection content={content.youtube} />
         <FAQ content={content.faq} />
         <ContactForm content={content.contact} />
       </main>

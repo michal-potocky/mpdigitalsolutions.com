@@ -61,6 +61,30 @@ export interface Content {
       steps: string[];
     };
   };
+  technologies: {
+    title: string;
+    subtitle: string;
+    items: {
+      name: string;
+      description: string;
+    }[];
+  };
+  youtube: {
+    title: string;
+    subtitle: string;
+    comingSoon: string;
+    videoIds: string[];
+  };
+  pricing: {
+    title: string;
+    subtitle: string;
+    cta: string;
+    items: {
+      name: string;
+      price: string;
+      description: string;
+    }[];
+  };
   faq: {
     title: string;
     items: { q: string; a: string }[];

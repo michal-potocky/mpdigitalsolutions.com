@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "WebFetch(domain:mpdigitalsolutions.com)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git merge:*)",
+      "Bash(git reset:*)",
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git commit:*)",
+      "Skill(create-prd)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build)",
+      "Bash(git add:*)"
+    ]
+  }
+}

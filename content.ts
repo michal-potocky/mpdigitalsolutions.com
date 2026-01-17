@@ -64,8 +64,8 @@ export const content: Record<'en' | 'sk', Content> = {
         {
           title: "Lead Management",
           sector: "Agencies & Local Services",
-          problem: "Leads get lost in email, slow response times, manual data entry into CRM.",
-          solution: "Automated capture from forms → AI Qualification → CRM Entry → Slack Notification.",
+          problem: "Response to a missed call after 5 minutes = 80% loss of potential customer. Without AI prioritization, you don't know which inquiry is urgent.",
+          solution: "Missed call/Email/Form → Auto-response within 2 min → AI prioritization → CRM → Sales rep notified.",
           result: "Typical Result: 100% lead capture and <5 min response time."
         },
         {
@@ -260,11 +260,11 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "Riešenia na mieru pre agentúry, e-shopy a lokálne služby.",
       cases: [
         {
-          title: "Manažment Leadov",
+          title: "Manažment Záujemcov",
           sector: "Agentúry a Služby",
-          problem: "Leady sa strácajú v emailoch, pomalé reakcie, manuálne prepisovanie do CRM.",
-          solution: "Automatický zber z formulárov → AI Kvalifikácia → Zápis do CRM → Notifikácia na Slack.",
-          result: "Typický výsledok: 100% zachytenie leadov a reakcia <5 min."
+          problem: "Reakcia na zmeškaný hovor nad 5 minút = 80% strata potenciálneho zákazníka. Bez AI prioritizácie neviete, ktorý dopyt je urgentný.",
+          solution: "Zmeškaný hovor/Email/Formulár → Automatická odpoveď do 2 min → AI prioritizácia → CRM → Kontaktovanie obchodníka.",
+          result: "Typický výsledok: 100% zachytenie záujemcov a reakcia <2 min."
         },
         {
           title: "Extrakcia Dokumentov",

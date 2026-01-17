@@ -2,7 +2,6 @@ export type Language = 'en' | 'sk';
 
 export interface Content {
   nav: {
-    services: string;
     useCases: string;
     process: string;
     faq: string;
@@ -24,19 +23,6 @@ export interface Content {
     };
     testimonialPlaceholder: string;
   };
-  services: {
-    title: string;
-    subtitle: string;
-    cards: {
-      title: string;
-      description: string;
-      features: string[];
-      deliverablesLabel: string;
-      deliverables: string;
-      cta: string;
-      highlight?: boolean;
-    }[];
-  };
   useCases: {
     title: string;
     subtitle: string;
@@ -48,32 +34,38 @@ export interface Content {
       result: string;
     }[];
   };
-  howItWorks: {
-    title: string;
-    phaseA: {
-      title: string;
-      subtitle: string;
-      steps: string[];
-    };
-    phaseB: {
-      title: string;
-      subtitle: string;
-      steps: string[];
-    };
-  };
-  technologies: {
+  services: {
     title: string;
     subtitle: string;
-    items: {
-      name: string;
+    cards: {
+      title: string;
+      highlight?: boolean;
       description: string;
+      features: string[];
+      deliverablesLabel: string;
+      deliverables: string;
+      cta: string;
     }[];
   };
-  youtube: {
+  howItWorks: {
     title: string;
-    subtitle: string;
-    comingSoon: string;
-    videoIds: string[];
+    phase1: {
+      title: string;
+      step1: {
+        title: string;
+        bullets: string[];
+      };
+      step2: {
+        title: string;
+        bullets: string[];
+      };
+      cta: string;
+    };
+    phase2: {
+      title: string;
+      subtitle: string;
+      steps: string[];
+    };
   };
   faq: {
     title: string;
@@ -95,6 +87,12 @@ export interface Content {
       };
       tools: string;
       toolsPlaceholder: string;
+      urgency: string;
+      urgencyOptions: {
+        week: string;
+        month: string;
+        unsure: string;
+      };
       message: string;
       consent: string;
     };

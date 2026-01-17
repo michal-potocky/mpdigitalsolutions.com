@@ -49,7 +49,6 @@ const Header: React.FC<HeaderProps> = ({ content, lang, setLang }) => {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center">
             <div className="flex space-x-8 mr-8 border-r border-gray-800 pr-8 h-8 items-center">
-              <NavLink to="services" label={content.services} />
               <NavLink to="use-cases" label={content.useCases} />
               <NavLink to="how-it-works" label={content.process} />
             </div>
@@ -87,7 +86,6 @@ const Header: React.FC<HeaderProps> = ({ content, lang, setLang }) => {
       {isMenuOpen && (
         <div className="md:hidden bg-black border-t border-gray-800 absolute w-full h-screen">
           <div className="px-4 pt-8 pb-6 space-y-6">
-            <NavLink to="services" label={content.services} />
             <NavLink to="use-cases" label={content.useCases} />
             <NavLink to="how-it-works" label={content.process} />
             <NavLink to="faq" label={content.faq} />

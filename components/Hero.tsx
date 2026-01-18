@@ -53,20 +53,20 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
             {content.subheadline}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-[repeat(2,minmax(0,1fr))] gap-6">
             <button
               onClick={() => scrollTo('contact')}
-              className="group relative px-8 py-4 bg-white text-black font-bold uppercase tracking-wider hover:bg-brand transition-colors duration-200"
+              className="group relative w-full px-8 py-4 bg-white text-black font-bold uppercase tracking-wider hover:bg-brand transition-colors duration-200"
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center gap-3">
                 {content.ctaPrimary}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </div>
             </button>
-            
+
             <button
               onClick={() => scrollTo('use-cases')}
-              className="px-8 py-4 border border-gray-700 text-gray-300 font-mono text-sm uppercase hover:border-brand hover:text-brand transition-colors duration-200"
+              className="w-full px-8 py-4 border border-gray-700 text-gray-300 font-mono text-sm uppercase hover:border-brand hover:text-brand transition-colors duration-200"
             >
               {content.ctaSecondary}
             </button>

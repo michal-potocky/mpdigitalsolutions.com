@@ -97,7 +97,6 @@ export const content: Record<'en' | 'sk', Content> = {
         { name: "OpenAI", description: "AI/LLM" },
         { name: "Claude", description: "AI/LLM" },
         { name: "Google Workspace", description: "Productivity" },
-        { name: "Slack", description: "Communication" },
         { name: "HubSpot", description: "CRM" },
         { name: "Supabase", description: "Database" }
       ]
@@ -295,7 +294,6 @@ export const content: Record<'en' | 'sk', Content> = {
         { name: "OpenAI", description: "AI/LLM" },
         { name: "Claude", description: "AI/LLM" },
         { name: "Google Workspace", description: "Produktivita" },
-        { name: "Slack", description: "Komunikácia" },
         { name: "HubSpot", description: "CRM" },
         { name: "Supabase", description: "Databáza" }
       ]

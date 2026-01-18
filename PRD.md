@@ -83,10 +83,10 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - **Result:** "Every lead in CRM within seconds. Instant team notification."
 
 **Acceptance Criteria:**
-- [ ] English content updated in `content.ts`
-- [ ] Slovak translation added in `content.ts`
-- [ ] Card displays correctly on website
-- [ ] Typecheck passes
+- [x] English content updated in `content.ts`
+- [x] Slovak translation added in `content.ts`
+- [x] Card displays correctly on website
+- [x] Typecheck passes
 
 ---
 
@@ -100,10 +100,10 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - **Result:** "Invoices processed automatically. Manual entry eliminated."
 
 **Acceptance Criteria:**
-- [ ] English content updated in `content.ts`
-- [ ] Slovak translation added in `content.ts`
-- [ ] Card displays correctly on website
-- [ ] Typecheck passes
+- [x] English content updated in `content.ts`
+- [x] Slovak translation added in `content.ts`
+- [x] Card displays correctly on website
+- [x] Typecheck passes
 
 ---
 
@@ -117,10 +117,10 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - **Result:** "One source of truth. No more missed follow-ups."
 
 **Acceptance Criteria:**
-- [ ] English content updated in `content.ts`
-- [ ] Slovak translation added in `content.ts`
-- [ ] Card displays correctly on website
-- [ ] Typecheck passes
+- [x] English content updated in `content.ts`
+- [x] Slovak translation added in `content.ts`
+- [x] Card displays correctly on website
+- [x] Typecheck passes
 
 ---
 
@@ -134,10 +134,10 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - **Result:** "Reports ready automatically. Every week. On time."
 
 **Acceptance Criteria:**
-- [ ] English content updated in `content.ts`
-- [ ] Slovak translation added in `content.ts`
-- [ ] Card displays correctly on website
-- [ ] Typecheck passes
+- [x] English content updated in `content.ts`
+- [x] Slovak translation added in `content.ts`
+- [x] Card displays correctly on website
+- [x] Typecheck passes
 
 ---
 
@@ -145,12 +145,12 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 **Description:** As a visitor, I want a simpler contact form so that I can request an audit without confusing fields.
 
 **Acceptance Criteria:**
-- [ ] Remove "Timeline / Urgency" field from form
-- [ ] Remove corresponding field from `content.ts` (EN + SK)
-- [ ] Update `ContactForm.tsx` if field is hardcoded
-- [ ] Form layout remains clean after removal
-- [ ] Typecheck passes
-- [ ] Verify form works in browser
+- [x] Remove "Timeline / Urgency" field from form
+- [x] Remove corresponding field from `content.ts` (EN + SK)
+- [x] Update `ContactForm.tsx` if field is hardcoded
+- [x] Form layout remains clean after removal
+- [x] Typecheck passes
+- [x] Verify form works in browser
 
 ---
 
@@ -171,11 +171,11 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - Other / Not Sure Yet
 
 **Acceptance Criteria:**
-- [ ] English options updated in `content.ts`
-- [ ] Slovak translations added in `content.ts`
-- [ ] Dropdown displays new options correctly
-- [ ] Typecheck passes
-- [ ] Verify form works in browser
+- [x] English options updated in `content.ts`
+- [x] Slovak translations added in `content.ts`
+- [x] Dropdown displays new options correctly
+- [x] Typecheck passes
+- [x] Verify form works in browser
 
 ---
 
@@ -188,12 +188,12 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 - Keep same logos but reframe the narrative
 
 **Acceptance Criteria:**
-- [ ] Update section title in `content.ts` (EN + SK)
-- [ ] Update section subtitle/description (EN + SK)
-- [ ] Review if any tech logos should be added/removed
-- [ ] Section displays correctly
-- [ ] Typecheck passes
-- [ ] Verify changes in browser
+- [x] Update section title in `content.ts` (EN + SK)
+- [x] Update section subtitle/description (EN + SK)
+- [x] Review if any tech logos should be added/removed
+- [x] Section displays correctly
+- [x] Typecheck passes
+- [x] Verify changes in browser
 
 ---
 
@@ -206,11 +206,11 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 "We calculate your potential benefit first - time saved, errors eliminated, faster response times. Then we design a solution where the cost is a fraction of the benefit. Typical projects start from €1,000. The first audit call is free - we'll show you exactly what's possible and what it would cost."
 
 **Acceptance Criteria:**
-- [ ] English FAQ answer updated in `content.ts`
-- [ ] Slovak translation added in `content.ts`
-- [ ] FAQ displays correctly
-- [ ] Typecheck passes
-- [ ] Verify changes in browser
+- [x] English FAQ answer updated in `content.ts`
+- [x] Slovak translation added in `content.ts`
+- [x] FAQ displays correctly
+- [x] Typecheck passes
+- [x] Verify changes in browser
 
 ---
 
@@ -224,14 +224,14 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 
 ---
 
-## Files to Modify
+## Files Modified
 
 | File | Changes |
 |------|---------|
-| `src/content.ts` | Use case text, form fields, tech section, FAQ answer (EN + SK) |
-| `src/types.ts` | Update types if field structure changes |
-| `src/components/ContactForm.tsx` | Remove timeline field rendering |
-| `src/components/Technologies.tsx` | Update messaging if needed |
+| `content.ts` | Use case text, form fields, tech section, FAQ answer (EN + SK) |
+| `types.ts` | Updated types for field structure |
+| `components/ContactForm.tsx` | Timeline field removed, topic dropdown updated |
+| `components/Technologies.tsx` | Messaging updated to "integrations" framing |
 
 ---
 

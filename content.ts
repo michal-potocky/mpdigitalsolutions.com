@@ -224,8 +224,8 @@ export const content: Record<'en' | 'sk', Content> = {
         title: "Reálne výsledky",
         items: [
           { title: "Rýchlosť", desc: "Prvý funkčný prototyp zvyčajne do 7 dní." },
-          { title: "Jasnosť", desc: "Pevný rozsah a jasné výstupy. Žiadne skryté náklady." },
-          { title: "Vlastníctvo", desc: "Workflow a dáta vlastníte vy. Žiadna závislosť na dodávateľovi." }
+          { title: "Jasnosť", desc: "Najprv audit call, potom presná cena. Rozsah aj výstupy sú dopredu jasné. Bez skrytých nákladov." },
+          { title: "Vlastníctvo", desc: "Exportovateľné workflowy bez lock-inu. Prevádzka môže bežať na vašom serveri alebo v managed režime u nás." }
         ]
       },
       testimonialPlaceholder: "Dôverujú nám moderné firmy (Placeholder pre referencie)"
@@ -235,18 +235,18 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "Riešenia na mieru pre agentúry, e-shopy a lokálne služby.",
       cases: [
         {
-          title: "Manažment Leadov",
+          title: "Správa Dopytov",
           sector: "Agentúry a Služby",
-          problem: "Po 5 minútach šanca zastihnúť lead klesá 10x. 78% zákazníkov nakúpi od toho, kto odpovie prvý.",
-          solution: "Odoslanie formulára → AI kvalifikuje → Zápis do CRM → Tím notifikovaný okamžite.",
-          result: "Každý lead v CRM do pár sekúnd. Okamžitá notifikácia tímu."
+          problem: "Po 5 minútach klesá 10x šanca konvertovať potencionálneho zákazníka. 75% zákazníkov nakúpi od toho, kto odpovie prvý.",
+          solution: "Formulár / FB Lead Ads / e-mail → AI vyčistí a doplní dáta → lead scoring + kategória → zápis do CRM → okamžitá notifikácia obchodníka + úloha a follow-up.",
+          result: "Reakcia v minútach, nie v hodinách."
         },
         {
           title: "Extrakcia Dokumentov",
           sector: "E-commerce a Operatíva",
-          problem: "Manuálne prepisovanie dát z faktúr do účtovného softvéru.",
-          solution: "AI číta PDF → Extrahuje dodávateľa, položky, sumy → Posiela do vášho systému.",
-          result: "Faktúry spracované automaticky. Manuálne zadávanie eliminované."
+          problem: "Dáta z dokladov sú v prílohách. Prepisovanie je pomalé a náchylné na chyby.",
+          solution: "Príloha → AI extrakcia → validácia (pravidlá, duplicity) → export do účtovníctva/ERP → uloženie do úložiska.",
+          result: "Menej chýb. Rýchlejšie spracovanie. Auditná stopa."
         },
         {
           title: "CRM a Workspace Automatizácia",

@@ -23,8 +23,8 @@ const Proof: React.FC<ProofProps> = ({ content }) => {
                         {item.title === 'Clarity' && 'No Hidden Fees'}
                         {item.title === 'Ownership' && '100% Yours'}
                         {(item.title === 'Rýchlosť') && '7 Dní'}
-                        {(item.title === 'Jasnosť') && 'Fixná Cena'}
-                        {(item.title === 'Vlastníctvo') && '100% Vaše'}
+                        {(item.title === 'Jasnosť') && 'Bez Skrytých Poplatkov'}
+                        {(item.title === 'Vlastníctvo') && 'Workflowy a dáta sú vaše'}
                     </h3>
                   </div>
                   <p className="text-sm md:text-base font-medium leading-relaxed border-t border-black/10 pt-4 mt-4">

@@ -37,9 +37,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
   }
 
   return (
-    <section id="contact" className="grid lg:grid-cols-2 min-h-screen border-t border-gray-800 bg-black-900">
+    <section id="contact" className="border-t border-gray-800 bg-black-900">
+      <div className="max-w-[1400px] mx-auto grid lg:grid-cols-12 min-h-screen">
       {/* Left Content */}
-      <div className="p-8 lg:p-20 border-b lg:border-b-0 lg:border-r border-gray-800 flex flex-col justify-center">
+      <div className="lg:col-span-4 p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-gray-800 flex flex-col justify-center">
         <span className="font-mono text-xs text-brand uppercase tracking-widest mb-6 block">
           [04] Start Now
         </span>
@@ -62,7 +63,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
       </div>
 
       {/* Right Form */}
-      <div className="p-8 lg:p-20 bg-black flex flex-col justify-center">
+      <div className="lg:col-span-8 p-8 lg:p-12 bg-black flex flex-col justify-center">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -75,9 +76,23 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.company}</label>
-            <input type="text" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="Company Ltd." />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.company}</label>
+              <input type="text" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="Company Ltd." />
+            </div>
+            <div className="space-y-2">
+              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.employeeCount}</label>
+              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+                <option value="1">{content.fields.employeeCountOptions.one}</option>
+                <option value="2-5">{content.fields.employeeCountOptions.twoToFive}</option>
+                <option value="6-10">{content.fields.employeeCountOptions.sixToTen}</option>
+                <option value="11-25">{content.fields.employeeCountOptions.elevenToTwentyFive}</option>
+                <option value="26-50">{content.fields.employeeCountOptions.twentySixToFifty}</option>
+                <option value="51-200">{content.fields.employeeCountOptions.fiftyOneToTwoHundred}</option>
+                <option value="201+">{content.fields.employeeCountOptions.twoHundredPlus}</option>
+              </select>
+            </div>
           </div>
 
           <div className="space-y-2">
@@ -115,6 +130,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             {!isSubmitting && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
           </button>
         </form>
+      </div>
       </div>
     </section>
   );

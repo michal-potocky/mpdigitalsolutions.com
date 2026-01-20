@@ -97,6 +97,16 @@ export interface Content {
         reporting: string;
         other: string;
       };
+      employeeCount: string;
+      employeeCountOptions: {
+        one: string;
+        twoToFive: string;
+        sixToTen: string;
+        elevenToTwentyFive: string;
+        twentySixToFifty: string;
+        fiftyOneToTwoHundred: string;
+        twoHundredPlus: string;
+      };
       tools: string;
       toolsPlaceholder: string;
       message: string;

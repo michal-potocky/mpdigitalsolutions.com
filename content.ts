@@ -182,6 +182,16 @@ export const content: Record<'en' | 'sk', Content> = {
           reporting: "Reporting Automation",
           other: "Other / Not Sure Yet"
         },
+        employeeCount: "Number of Employees",
+        employeeCountOptions: {
+          one: "1",
+          twoToFive: "2-5",
+          sixToTen: "6-10",
+          elevenToTwentyFive: "11-25",
+          twentySixToFifty: "26-50",
+          fiftyOneToTwoHundred: "51-200",
+          twoHundredPlus: "201+"
+        },
         tools: "Current Tools (e.g., HubSpot, Slack)",
         toolsPlaceholder: "List your main software stack...",
         message: "How can we help? (Brief description)",
@@ -378,6 +388,16 @@ export const content: Record<'en' | 'sk', Content> = {
           crm: "CRM a Workspace synchronizácia",
           reporting: "Automatizácia reportingu",
           other: "Iné / Zatiaľ neviem"
+        },
+        employeeCount: "Počet zamestnancov",
+        employeeCountOptions: {
+          one: "1",
+          twoToFive: "2-5",
+          sixToTen: "6-10",
+          elevenToTwentyFive: "11-25",
+          twentySixToFifty: "26-50",
+          fiftyOneToTwoHundred: "51-200",
+          twoHundredPlus: "201+"
         },
         tools: "Súčasné nástroje (napr. HubSpot, Slack)",
         toolsPlaceholder: "Vypíšte váš hlavný softvér...",

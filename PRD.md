@@ -296,6 +296,27 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 
 ---
 
+## Recent Updates
+
+### Hero Section Redesign (Jan 2026)
+**Changes:**
+- ✅ Removed efficiency widget panel (Current Efficiency 45% / Projected Efficiency [10X] boxes)
+- ✅ Centered Hero content (headline, subheadline, CTA buttons)
+- ✅ Unified CTA button widths using CSS grid (`grid-cols-[repeat(2,minmax(0,1fr))]`)
+- ✅ Both buttons now have equal width on desktop, stack full-width on mobile
+
+**Files Modified:**
+- `components/Hero.tsx` - Layout changes, removed Play icon import
+
+### Tech Stack Update (Jan 2026)
+**Changes:**
+- ✅ Removed Slack from tech stack list (EN + SK)
+
+**Files Modified:**
+- `content.ts` - Removed Slack entries from techStack.items
+
+---
+
 ## Notes
 
 - No pricing displayed on website - discussed during audit call

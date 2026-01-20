@@ -1,0 +1,117 @@
+# MP Digital Solutions - LLM-Readable Content
+
+> AI automation consultancy helping small businesses and agencies reclaim their time through intelligent automation.
+
+## Company Overview
+
+MP Digital Solutions integrates custom AI automations for businesses and agencies that bring new clients and save time. We are professional, direct, and outcome-oriented.
+
+- Specialized in n8n & AI Integration
+- Typical prototype delivery in ~7 days
+- No exaggerated promises, just results
+- We reply to every audit request within 1 business day
+
+## Services
+
+### 1. Workflow Automation
+Connect your apps and automate repetitive tasks with custom n8n workflows.
+
+**Features:**
+- API Integration
+- Data Synchronization
+- Custom Logic
+
+**Deliverables:** Deployed Workflows, Documentation, Handover Call
+
+### 2. AI Solutions
+Implement intelligent agents that can understand, reason, and act on your data.
+
+**Features:**
+- LLM Integration
+- Document Processing
+- Smart Agents
+
+**Deliverables:** Custom AI Agents, Prompt Engineering, Setup Guide
+
+## Use Cases
+
+### Lead Management (Agencies & Local Services)
+**Problem:** After 5 minutes, chance of reaching a lead drops by 10x. 78% of customers buy from whoever responds first.
+**Solution:** Form submission → AI qualifies → CRM entry → Team notified instantly.
+**Result:** Every lead in CRM within seconds. Instant team notification.
+
+### Document Extraction (E-commerce & Operations)
+**Problem:** Manually copying invoice data to accounting software.
+**Solution:** AI reads PDF → Extracts vendor, items, amounts → Sends to your system.
+**Result:** Invoices processed automatically. Manual entry eliminated.
+
+### CRM & Workspace Automation (Real Estate & Sales)
+**Problem:** Client info scattered across Gmail, Calendar, CRM. Missed follow-ups.
+**Solution:** Two-way sync between Google Workspace and CRM. Automated reminders.
+**Result:** One source of truth. No more missed follow-ups.
+
+### Reporting Automation (Marketing Agencies)
+**Problem:** Weekly copy-paste from Ads Manager, Analytics, spreadsheets.
+**Solution:** Scheduled data pull → AI generates summary → PDF delivered to inbox.
+**Result:** Reports ready automatically. Every week. On time.
+
+## Technology Stack
+
+We integrate with tools you already use:
+
+- **n8n** - Workflow Automation Platform
+- **OpenAI** - AI/LLM Provider
+- **Claude** - AI/LLM Provider
+- **Google Workspace** - Productivity Suite
+- **HubSpot** - CRM
+- **Supabase** - Database
+
+## How We Work
+
+### Phase 1: Analysis
+
+**Step 1 - Intro Call (10-15 min, no video)**
+- Goal: Understand the situation and decide if it makes sense to go deeper.
+- Output: Scheduling the deep-dive audit.
+
+**Step 2 - Free Audit (45-60 min, video)**
+- Goal: System mapping, Technical review of tools.
+- Output: Within 3 days, a PDF overview of the proposed solution and price estimate.
+
+### Phase 2: Development
+
+1. Development & Integration
+2. Rigorous Testing
+3. Deployment & Training
+4. Maintenance & Improvements (Optional)
+
+## Frequently Asked Questions
+
+**How much does it cost?**
+We calculate your potential benefit first — time saved, errors eliminated, faster response times. Then we design a solution where the cost is a fraction of the benefit. Typical projects start from €1,000. The first audit call is free.
+
+**How long does it take?**
+A standard scope prototype is typically ready for review in ~7 days. Complex system integrations may take 2-4 weeks.
+
+**What do you need from me?**
+Access to the relevant software APIs (keys) and a clear explanation of your current manual process (e.g., a screen recording).
+
+**Is my data safe?**
+We prioritize security. We use secure authentication methods, and where possible, we build automations that run within your own infrastructure or secure cloud environments.
+
+**Do you support existing CRMs?**
+Yes. n8n connects with Pipedrive, HubSpot, Salesforce, Zoho, and hundreds of others.
+
+**What happens after the project?**
+We offer maintenance packages or can hand off the documentation so your internal team can manage it.
+
+## Contact
+
+To request a free audit, visit: https://mpdigitalsolutions.com/#contact
+
+We promise a reply within 1 business day.
+
+---
+
+Website: https://mpdigitalsolutions.com
+Languages: English, Slovak

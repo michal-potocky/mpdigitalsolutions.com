@@ -232,6 +232,8 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 | `types.ts` | Updated types for field structure |
 | `components/ContactForm.tsx` | Timeline field removed, topic dropdown updated |
 | `components/Technologies.tsx` | Messaging updated to "integrations" framing |
+| `public/llms.txt` | LLM-readable content for AI tools |
+| `public/robots.txt` | Crawler instructions for AI bots |
 
 ---
 
@@ -314,6 +316,19 @@ Help small-medium businesses automate repetitive tasks using AI, starting with a
 
 **Files Modified:**
 - `content.ts` - Removed Slack entries from techStack.items
+
+### LLM Discoverability (Jan 2026)
+**Changes:**
+- ✅ Added `public/llms.txt` - LLM-readable content file (~4KB) with company overview, services, use cases, tech stack, process, FAQ, and contact info
+- ✅ Added `public/robots.txt` - Crawler instructions allowing AI bots (GPTBot, Claude-Web, Anthropic-AI)
+
+**Files Created:**
+- `public/llms.txt` - Structured content for LLM tools (English)
+- `public/robots.txt` - Crawler permissions and sitemap reference
+
+**Verification:**
+- https://mpdigitalsolutions.com/llms.txt
+- https://mpdigitalsolutions.com/robots.txt
 
 ---
 

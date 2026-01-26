@@ -192,6 +192,13 @@ export const content: Record<'en' | 'sk', Content> = {
           fiftyOneToTwoHundred: "51-200",
           twoHundredPlus: "201+"
         },
+        timeline: "Project Timeline",
+        timelineOptions: {
+          asap: "ASAP / Next 30 Days",
+          threeMonths: "In the Next 3 Months",
+          sixMonths: "3-6 Months Out",
+          researching: "Just Researching"
+        },
         tools: "Current Tools (e.g., HubSpot, Slack)",
         toolsPlaceholder: "List your main software stack...",
         message: "How can we help? (Brief description)",
@@ -200,12 +207,73 @@ export const content: Record<'en' | 'sk', Content> = {
       submit: "Request Free Audit",
       submitting: "Sending...",
       successTitle: "Request Received!",
-      successMessage: "Thank you. We will review your details and get back to you within 1 business day with next steps."
+      successMessage: "Thank you. We will review your details and get back to you within 1 business day with next steps.",
+      directEmail: "Or email us directly at"
     },
     footer: {
       summary: "Helping small businesses and agencies reclaim their time through intelligent automation.",
       privacy: "Privacy Policy",
+      terms: "Terms of Service",
       rights: "All rights reserved."
+    },
+    legalPages: {
+      backToHome: "Back to Home",
+      privacyPolicy: {
+        title: "Privacy Policy",
+        lastUpdated: "Last updated: January 2026",
+        sections: [
+          {
+            title: "1. Who We Are",
+            content: "MP Digital Solutions (\"we\", \"us\", or \"our\") operates the website mpdigitalsolutions.com. We are committed to protecting your personal data and respecting your privacy in accordance with the General Data Protection Regulation (GDPR) and applicable Slovak laws."
+          },
+          {
+            title: "2. What Data We Collect",
+            content: "We collect the following personal data when you submit our contact form: Full name, Work email address, Company name, Number of employees, Current tools you use, and your message describing how we can help. We also collect technical data such as IP address, browser type, and cookies for website functionality."
+          },
+          {
+            title: "3. Why We Collect Data",
+            content: "We process your personal data for the following purposes: To respond to your audit request and provide our services, to communicate with you about our offerings, to improve our website and services, and to comply with legal obligations. The legal basis for processing is your consent (Article 6(1)(a) GDPR) and our legitimate interest in conducting business (Article 6(1)(f) GDPR)."
+          },
+          {
+            title: "4. How Long We Keep Data",
+            content: "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected. Contact form submissions are retained for up to 3 years after our last interaction. You may request deletion at any time."
+          },
+          {
+            title: "5. Your Rights",
+            content: "Under GDPR, you have the right to: Access your personal data, Rectify inaccurate data, Erase your data (\"right to be forgotten\"), Restrict processing of your data, Data portability, Object to processing, and Withdraw consent at any time. To exercise these rights, contact us at hello@mpdigitalsolutions.com."
+          },
+          {
+            title: "6. Contact",
+            content: "For any questions about this Privacy Policy or our data practices, please contact us at: hello@mpdigitalsolutions.com"
+          }
+        ]
+      },
+      termsOfService: {
+        title: "Terms of Service",
+        lastUpdated: "Last updated: January 2026",
+        sections: [
+          {
+            title: "1. General Provisions",
+            content: "These Terms of Service govern your use of the MP Digital Solutions website and services. By accessing our website or using our services, you agree to be bound by these terms. If you do not agree, please do not use our services."
+          },
+          {
+            title: "2. Description of Services",
+            content: "MP Digital Solutions provides AI automation and workflow integration services, including but not limited to: consultation and audit services, custom n8n workflow development, AI agent implementation, and ongoing maintenance and support. Specific deliverables and scope are defined in individual project agreements."
+          },
+          {
+            title: "3. Liability",
+            content: "Our services are provided \"as is\" without warranties of any kind. We shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our services. Our total liability shall not exceed the amount paid for the specific service in question."
+          },
+          {
+            title: "4. Intellectual Property",
+            content: "Upon full payment, you own the custom workflows and configurations we create for you. You may export, modify, and use them freely. We retain the right to reuse general methodologies, techniques, and non-proprietary components in future projects. Our website content, branding, and proprietary tools remain our intellectual property."
+          },
+          {
+            title: "5. Final Provisions",
+            content: "These terms are governed by the laws of the Slovak Republic. Any disputes shall be resolved by the competent courts of the Slovak Republic. We reserve the right to modify these terms at any time. Continued use of our services after changes constitutes acceptance of the new terms."
+          }
+        ]
+      }
     }
   },
   sk: {
@@ -399,6 +467,13 @@ export const content: Record<'en' | 'sk', Content> = {
           fiftyOneToTwoHundred: "51-200",
           twoHundredPlus: "201+"
         },
+        timeline: "Časový rámec projektu",
+        timelineOptions: {
+          asap: "Čo najskôr / Do 30 dní",
+          threeMonths: "V priebehu 3 mesiacov",
+          sixMonths: "3-6 mesiacov",
+          researching: "Len si zisťujem informácie"
+        },
         tools: "Súčasné nástroje (napr. HubSpot, Slack)",
         toolsPlaceholder: "Vypíšte váš hlavný softvér...",
         message: "Ako môžeme pomôcť? (Krátky popis)",
@@ -407,12 +482,73 @@ export const content: Record<'en' | 'sk', Content> = {
       submit: "Požiadať o bezplatný audit",
       submitting: "Odosielam...",
       successTitle: "Žiadosť prijatá!",
-      successMessage: "Ďakujeme. Vaše údaje skontrolujeme a ozveme sa vám do 1 pracovného dňa s ďalšími krokmi."
+      successMessage: "Ďakujeme. Vaše údaje skontrolujeme a ozveme sa vám do 1 pracovného dňa s ďalšími krokmi.",
+      directEmail: "Alebo nám napíšte priamo na"
     },
     footer: {
       summary: "Pomáhame malým firmám a agentúram získať späť čas prostredníctvom inteligentnej automatizácie.",
       privacy: "Ochrana súkromia",
+      terms: "Obchodné podmienky",
       rights: "Všetky práva vyhradené."
+    },
+    legalPages: {
+      backToHome: "Späť na úvod",
+      privacyPolicy: {
+        title: "Ochrana osobných údajov",
+        lastUpdated: "Posledná aktualizácia: Január 2026",
+        sections: [
+          {
+            title: "1. Kto sme",
+            content: "MP Digital Solutions (\"my\", \"nás\" alebo \"náš\") prevádzkuje webovú stránku mpdigitalsolutions.com. Zaväzujeme sa chrániť vaše osobné údaje a rešpektovať vaše súkromie v súlade so Všeobecným nariadením o ochrane údajov (GDPR) a platnými slovenskými zákonmi."
+          },
+          {
+            title: "2. Aké údaje zbierame",
+            content: "Pri odoslaní kontaktného formulára zbierame nasledujúce osobné údaje: Celé meno, Pracovný email, Názov spoločnosti, Počet zamestnancov, Aktuálne nástroje ktoré používate, a vašu správu s popisom ako vám môžeme pomôcť. Tiež zbierame technické údaje ako IP adresa, typ prehliadača a cookies pre funkčnosť webu."
+          },
+          {
+            title: "3. Prečo údaje zbierame",
+            content: "Vaše osobné údaje spracúvame na tieto účely: Odpoveď na vašu žiadosť o audit a poskytovanie našich služieb, komunikáciu s vami o našich ponukách, zlepšovanie našej webovej stránky a služieb, a plnenie zákonných povinností. Právnym základom spracovania je váš súhlas (článok 6(1)(a) GDPR) a náš oprávnený záujem na vykonávaní podnikateľskej činnosti (článok 6(1)(f) GDPR)."
+          },
+          {
+            title: "4. Ako dlho údaje uchovávame",
+            content: "Vaše osobné údaje uchovávame len po dobu nevyhnutnú na splnenie účelov, na ktoré boli zhromaždené. Údaje z kontaktného formulára uchovávame až 3 roky od našej poslednej interakcie. Kedykoľvek môžete požiadať o vymazanie."
+          },
+          {
+            title: "5. Vaše práva",
+            content: "Podľa GDPR máte právo na: Prístup k vašim osobným údajom, Opravu nepresných údajov, Vymazanie vašich údajov (\"právo byť zabudnutý\"), Obmedzenie spracovania vašich údajov, Prenosnosť údajov, Námietku proti spracovaniu, a Odvolanie súhlasu kedykoľvek. Pre uplatnenie týchto práv nás kontaktujte na hello@mpdigitalsolutions.com."
+          },
+          {
+            title: "6. Kontakt",
+            content: "V prípade akýchkoľvek otázok ohľadom týchto zásad ochrany súkromia alebo našich postupov pri spracovaní údajov nás prosím kontaktujte na: hello@mpdigitalsolutions.com"
+          }
+        ]
+      },
+      termsOfService: {
+        title: "Obchodné podmienky",
+        lastUpdated: "Posledná aktualizácia: Január 2026",
+        sections: [
+          {
+            title: "1. Všeobecné ustanovenia",
+            content: "Tieto Obchodné podmienky upravujú používanie webovej stránky a služieb MP Digital Solutions. Prístupom na našu webovú stránku alebo používaním našich služieb súhlasíte s týmito podmienkami. Ak nesúhlasíte, prosím nepoužívajte naše služby."
+          },
+          {
+            title: "2. Popis služieb",
+            content: "MP Digital Solutions poskytuje služby AI automatizácie a integrácie workflow, vrátane ale nie výlučne: konzultačné a auditové služby, vývoj vlastných n8n workflow, implementácia AI agentov, a priebežná údržba a podpora. Konkrétne výstupy a rozsah sú definované v jednotlivých projektových dohodách."
+          },
+          {
+            title: "3. Zodpovednosť",
+            content: "Naše služby sú poskytované \"tak ako sú\" bez akýchkoľvek záruk. Nenesieme zodpovednosť za žiadne nepriame, náhodné, špeciálne alebo následné škody vyplývajúce z používania našich služieb. Naša celková zodpovednosť nepresiahne sumu zaplatenú za konkrétnu službu."
+          },
+          {
+            title: "4. Duševné vlastníctvo",
+            content: "Po úplnej úhrade vlastníte vlastné workflow a konfigurácie, ktoré pre vás vytvoríme. Môžete ich slobodne exportovať, upravovať a používať. Vyhradzujeme si právo opätovne použiť všeobecné metodológie, techniky a nechránené komponenty v budúcich projektoch. Obsah našej webovej stránky, značka a vlastné nástroje zostávajú naším duševným vlastníctvom."
+          },
+          {
+            title: "5. Záverečné ustanovenia",
+            content: "Tieto podmienky sa riadia zákonmi Slovenskej republiky. Akékoľvek spory budú riešené príslušnými súdmi Slovenskej republiky. Vyhradzujeme si právo tieto podmienky kedykoľvek upraviť. Pokračovaním v používaní našich služieb po zmenách vyjadrujete súhlas s novými podmienkami."
+          }
+        ]
+      }
     }
   }
 };

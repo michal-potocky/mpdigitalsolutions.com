@@ -95,15 +95,26 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.topic}</label>
-            <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
-              <option value="lead">{content.fields.topicOptions.lead}</option>
-              <option value="invoice">{content.fields.topicOptions.invoice}</option>
-              <option value="crm">{content.fields.topicOptions.crm}</option>
-              <option value="reporting">{content.fields.topicOptions.reporting}</option>
-              <option value="other">{content.fields.topicOptions.other}</option>
-            </select>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.topic}</label>
+              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+                <option value="lead">{content.fields.topicOptions.lead}</option>
+                <option value="invoice">{content.fields.topicOptions.invoice}</option>
+                <option value="crm">{content.fields.topicOptions.crm}</option>
+                <option value="reporting">{content.fields.topicOptions.reporting}</option>
+                <option value="other">{content.fields.topicOptions.other}</option>
+              </select>
+            </div>
+            <div className="space-y-2">
+              <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.timeline}</label>
+              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+                <option value="asap">{content.fields.timelineOptions.asap}</option>
+                <option value="3months">{content.fields.timelineOptions.threeMonths}</option>
+                <option value="6months">{content.fields.timelineOptions.sixMonths}</option>
+                <option value="researching">{content.fields.timelineOptions.researching}</option>
+              </select>
+            </div>
           </div>
 
           <div className="space-y-2">
@@ -129,6 +140,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             {isSubmitting ? content.submitting : content.submit}
             {!isSubmitting && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
           </button>
+
+          <p className="text-center text-gray-500 text-sm mt-6">
+            {content.directEmail}{' '}
+            <a href="mailto:michalpotocky@mpdigitalsolutions.com" className="text-brand hover:text-white transition-colors">
+              michalpotocky@mpdigitalsolutions.com
+            </a>
+          </p>
         </form>
       </div>
       </div>

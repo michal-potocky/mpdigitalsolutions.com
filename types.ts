@@ -107,6 +107,13 @@ export interface Content {
         fiftyOneToTwoHundred: string;
         twoHundredPlus: string;
       };
+      timeline: string;
+      timelineOptions: {
+        asap: string;
+        threeMonths: string;
+        sixMonths: string;
+        researching: string;
+      };
       tools: string;
       toolsPlaceholder: string;
       message: string;
@@ -116,10 +123,31 @@ export interface Content {
     submitting: string;
     successTitle: string;
     successMessage: string;
+    directEmail: string;
   };
   footer: {
     summary: string;
     privacy: string;
+    terms: string;
     rights: string;
+  };
+  legalPages: {
+    backToHome: string;
+    privacyPolicy: {
+      title: string;
+      lastUpdated: string;
+      sections: {
+        title: string;
+        content: string;
+      }[];
+    };
+    termsOfService: {
+      title: string;
+      lastUpdated: string;
+      sections: {
+        title: string;
+        content: string;
+      }[];
+    };
   };
 }

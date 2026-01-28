@@ -49,20 +49,6 @@ export const content: Record<'en' | 'sk', Content> = {
           problem: "Manually copying invoice data to accounting software.",
           solution: "AI reads PDF → Extracts vendor, items, amounts → Sends to your system.",
           result: "Invoices processed automatically. Manual entry eliminated."
-        },
-        {
-          title: "CRM & Workspace Automation",
-          sector: "Real Estate & Sales",
-          problem: "Client info scattered across Gmail, Calendar, CRM. Missed follow-ups.",
-          solution: "Two-way sync between Google Workspace and CRM. Automated reminders.",
-          result: "One source of truth. No more missed follow-ups."
-        },
-        {
-          title: "Reporting Automation",
-          sector: "Marketing Agencies",
-          problem: "Weekly copy-paste from Ads Manager, Analytics, spreadsheets.",
-          solution: "Scheduled data pull → AI generates summary → PDF delivered to inbox.",
-          result: "Reports ready automatically. Every week. On time."
         }
       ]
     },
@@ -324,20 +310,6 @@ export const content: Record<'en' | 'sk', Content> = {
           problem: "Dáta z dokladov sú v prílohách. Prepisovanie je pomalé a náchylné na chyby.",
           solution: "Príloha → AI extrakcia → validácia (pravidlá, duplicity) → export do účtovníctva/ERP → uloženie do úložiska.",
           result: "Menej chýb. Rýchlejšie spracovanie. Auditná stopa."
-        },
-        {
-          title: "CRM a Workspace Automatizácia",
-          sector: "Reality a Obchod",
-          problem: "Informácie o klientoch roztrúsené v Gmaili, Kalendári, CRM. Zmeškané follow-upy.",
-          solution: "Obojsmerná synchronizácia Google Workspace a CRM. Automatické pripomienky.",
-          result: "Jeden zdroj pravdy. Žiadne zmeškané follow-upy."
-        },
-        {
-          title: "Automatizácia Reportingu",
-          sector: "Marketingové Agentúry",
-          problem: "Týždenné kopírovanie z Ads Manager, Analytics, tabuliek.",
-          solution: "Plánovaný zber dát → AI generuje zhrnutie → PDF doručené do schránky.",
-          result: "Reporty pripravené automaticky. Každý týždeň. Načas."
         }
       ]
     },

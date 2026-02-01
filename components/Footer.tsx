@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { Content } from '../types';
 
@@ -11,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ content }) => {
   return (
     <footer className="bg-black text-white border-t border-gray-800">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-800">
+        <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-800">
 
           {/* Brand */}
           <div className="p-8 lg:p-12">
@@ -31,23 +30,6 @@ const Footer: React.FC<FooterProps> = ({ content }) => {
                 <span className="text-lg font-bold uppercase group-hover:text-brand transition-colors">LinkedIn</span>
                 <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-brand" />
               </a>
-              <a href="mailto:hello@mpdigitalsolutions.com" className="flex items-center justify-between group">
-                <span className="text-lg font-bold uppercase group-hover:text-brand transition-colors">Email</span>
-                <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-brand" />
-              </a>
-            </div>
-          </div>
-
-          {/* Legal */}
-          <div className="p-8 lg:p-12 flex flex-col justify-between">
-            <span className="font-mono text-xs text-gray-500 uppercase mb-4 block">Legal</span>
-            <div className="space-y-2">
-              <Link to="/privacy" className="block text-sm text-gray-400 hover:text-white transition-colors">
-                {content.privacy}
-              </Link>
-              <Link to="/terms" className="block text-sm text-gray-400 hover:text-white transition-colors">
-                {content.terms}
-              </Link>
             </div>
           </div>
 

@@ -9,14 +9,30 @@ interface ContactFormProps {
 const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setIsError(false);
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const res = await fetch('https://n8n.srv1214555.hstgr.cloud/webhook/lead-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error('Request failed');
       setIsSuccess(true);
-    }, 1500);
+    } catch {
+      setIsError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -68,22 +84,22 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.name}</label>
-              <input type="text" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="John Doe" />
+              <input type="text" name="name" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="John Doe" />
             </div>
             <div className="space-y-2">
               <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.email}</label>
-              <input type="email" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="john@company.com" />
+              <input type="email" name="email" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="john@company.com" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.company}</label>
-              <input type="text" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="Company Ltd." />
+              <input type="text" name="company" required className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none placeholder-gray-800" placeholder="Company Ltd." />
             </div>
             <div className="space-y-2">
               <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.employeeCount}</label>
-              <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+              <select name="employeeCount" className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
                 <option value="1">{content.fields.employeeCountOptions.one}</option>
                 <option value="2-5">{content.fields.employeeCountOptions.twoToFive}</option>
                 <option value="6-10">{content.fields.employeeCountOptions.sixToTen}</option>
@@ -97,7 +113,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
 
           <div className="space-y-2">
             <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.timeline}</label>
-            <select className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
+            <select name="timeline" className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none appearance-none cursor-pointer">
               <option value="asap">{content.fields.timelineOptions.asap}</option>
               <option value="3months">{content.fields.timelineOptions.threeMonths}</option>
               <option value="6months">{content.fields.timelineOptions.sixMonths}</option>
@@ -107,7 +123,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
 
           <div className="space-y-2">
             <label className="text-xs font-mono text-gray-500 uppercase">{content.fields.message}</label>
-            <textarea required rows={4} className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none resize-none placeholder-gray-800" placeholder="Describe your process..."></textarea>
+            <textarea name="message" required rows={4} className="w-full bg-black border border-gray-800 p-4 text-white focus:border-brand outline-none transition-colors rounded-none resize-none placeholder-gray-800" placeholder="Describe your process..."></textarea>
           </div>
 
           <div className="flex items-center gap-3 pt-4">
@@ -128,6 +144,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
             {isSubmitting ? content.submitting : content.submit}
             {!isSubmitting && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
           </button>
+
+          {isError && (
+            <p className="text-center text-red-500 text-sm mt-4">
+              Something went wrong. Please try again or email us directly.
+            </p>
+          )}
 
           <p className="text-center text-gray-500 text-sm mt-6">
             {content.directEmail}{' '}

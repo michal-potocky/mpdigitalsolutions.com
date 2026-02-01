@@ -37,8 +37,8 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "From inquiry to appointment.",
       cases: [
         {
-          title: "AI Lead-to-Appointment System",
-          subtitle: "For agencies, real estate, and local services",
+          title: "Lead-to-Appointment System",
+          subtitle: "For agencies, real estate offices, and local services",
           isMain: true,
           problem: "Leads come from multiple channels — forms, emails, missed calls. The team responds slowly or inconsistently. Opportunities are lost before anyone picks up the phone.\n\nAfter 5 minutes, the chance of converting a lead drops by 10×. Most customers choose whoever responds first.",
           solution: "Form / email / missed call → AI processing & data enrichment → automatic qualification & priority → CRM or calendar entry → instant notification to responsible person → customer confirmation of next step",
@@ -48,7 +48,7 @@ export const content: Record<'en' | 'sk', Content> = {
             "More booked meetings",
             "CRM and calendar order"
           ],
-          resultSummary: "More clients without increasing marketing costs.",
+          resultSummary: "More clients from existing leads – without increasing marketing costs.",
           suitableFor: [
             "Real estate offices (viewings)",
             "Agencies and B2B services",
@@ -66,7 +66,7 @@ export const content: Record<'en' | 'sk', Content> = {
             "Fewer no-shows",
             "More booked appointments"
           ],
-          note: "No cold calling. Only works with existing leads."
+          note: "No cold calls. Only responding to existing leads."
         }
       ]
     },
@@ -316,8 +316,8 @@ export const content: Record<'en' | 'sk', Content> = {
       subtitle: "Od dopytu k stretnutiu.",
       cases: [
         {
-          title: "AI Lead-to-Appointment System",
-          subtitle: "Pre agentúry, reality a lokálne služby",
+          title: "Lead-to-Appointment System",
+          subtitle: "Pre agentúry, realitné kancelárie a lokálne služby",
           isMain: true,
           problem: "Dopyty prichádzajú z viacerých kanálov (formulár, email, telefón). Reakcia je pomalá, follow-up neexistuje a veľká časť potenciálnych zákazníkov sa stratí.\n\nPo 5 minútach klesá šanca konverzie až 10×. Väčšina zákazníkov si vyberie toho, kto odpovie prvý.",
           solution: "Formulár / email / zmeškaný hovor → AI spracuje a doplní údaje → automatická kvalifikácia a priorita → zápis do CRM alebo kalendára → okamžitá notifikácia zodpovednej osoby → potvrdenie ďalšieho kroku zákazníkovi",
@@ -327,7 +327,7 @@ export const content: Record<'en' | 'sk', Content> = {
             "Viac dohodnutých stretnutí",
             "Poriadok v CRM a kalendári"
           ],
-          resultSummary: "Viac zákaziek bez zvyšovania marketingových nákladov.",
+          resultSummary: "Viac klientov z existujúcich dopytov – bez zvyšovania marketingových nákladov.",
           suitableFor: [
             "Realitné kancelárie (obhliadky)",
             "Agentúry a B2B služby",
@@ -345,7 +345,7 @@ export const content: Record<'en' | 'sk', Content> = {
             "Menej no-show",
             "Viac obsadených termínov"
           ],
-          note: "Žiadny cold calling. Len práca s existujúcimi dopytmi."
+          note: "Žiadne studené volania. Len reakcia na existujúce dopyty."
         }
       ]
     },

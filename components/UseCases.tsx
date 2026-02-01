@@ -56,12 +56,6 @@ const UseCases: React.FC<UseCasesProps> = ({ content }) => {
                       </p>
                     ))}
                   </div>
-                  <div>
-                    <span className="font-mono text-xs font-bold text-gray-400 uppercase mb-2 block">
-                      Solution
-                    </span>
-                    <p className="text-gray-800 leading-relaxed">{mainCase.solution}</p>
-                  </div>
                 </div>
 
                 {/* Right column: Results + Suitable For */}

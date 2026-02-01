@@ -33,22 +33,40 @@ export const content: Record<'en' | 'sk', Content> = {
       testimonialPlaceholder: "Trusted by forward-thinking businesses (Feedback Placeholder)"
     },
     useCases: {
-      title: "Common Use Cases",
-      subtitle: "Solutions tailored for Agencies, E-commerce, and Local Services.",
+      title: "Key Solutions",
+      subtitle: "From inquiry to appointment.",
       cases: [
         {
-          title: "Lead Management",
-          sector: "Agencies & Local Services",
-          problem: "After 5 minutes, chance of reaching a lead drops by 10x. 78% of customers buy from whoever responds first.",
-          solution: "Form submission → AI qualifies → CRM entry → Team notified instantly.",
-          result: "Every lead in CRM within seconds. Instant team notification."
+          title: "AI Lead-to-Appointment System",
+          subtitle: "For agencies, real estate, and local services",
+          isMain: true,
+          problem: "Leads come from multiple channels — forms, emails, missed calls. The team responds slowly or inconsistently. Opportunities are lost before anyone picks up the phone.\n\nAfter 5 minutes, the chance of converting a lead drops by 10×. Most customers choose whoever responds first.",
+          solution: "Form / email / missed call → AI processing & data enrichment → automatic qualification & priority → CRM or calendar entry → instant notification to responsible person → customer confirmation of next step",
+          results: [
+            "Response in minutes, not hours",
+            "Fewer lost leads",
+            "More booked meetings",
+            "CRM and calendar order"
+          ],
+          resultSummary: "More clients without increasing marketing costs.",
+          suitableFor: [
+            "Real estate offices (viewings)",
+            "Agencies and B2B services",
+            "Local businesses with 20+ leads/month"
+          ]
         },
         {
-          title: "Document Extraction",
-          sector: "E-commerce & Operations",
-          problem: "Manually copying invoice data to accounting software.",
-          solution: "AI reads PDF → Extracts vendor, items, amounts → Sends to your system.",
-          result: "Invoices processed automatically. Manual entry eliminated."
+          title: "Call Recovery & Appointment Confirmation",
+          subtitle: "Optional system extension",
+          isMain: false,
+          problem: "Missed calls and unconfirmed appointments = lost money.",
+          solution: "Automatic callback on missed call\nAppointment confirmation or rescheduling\nCalendar entry\nOwner / reception notification",
+          results: [
+            "Fewer missed opportunities",
+            "Fewer no-shows",
+            "More booked appointments"
+          ],
+          note: "No cold calling. Only works with existing leads."
         }
       ]
     },
@@ -294,22 +312,40 @@ export const content: Record<'en' | 'sk', Content> = {
       testimonialPlaceholder: "Dôverujú nám moderné firmy (Placeholder pre referencie)"
     },
     useCases: {
-      title: "Časté prípady použitia",
-      subtitle: "Riešenia na mieru pre agentúry, e-shopy a lokálne služby.",
+      title: "Hlavné riešenia",
+      subtitle: "Od dopytu k stretnutiu.",
       cases: [
         {
-          title: "Správa Dopytov",
-          sector: "Agentúry a Služby",
-          problem: "Po 5 minútach klesá 10x šanca konvertovať potencionálneho zákazníka. 75% zákazníkov nakúpi od toho, kto odpovie prvý.",
-          solution: "Formulár / FB Lead Ads / e-mail → AI vyčistí a doplní dáta → lead scoring + kategória → zápis do CRM → okamžitá notifikácia obchodníka + úloha a follow-up.",
-          result: "Reakcia v minútach, nie v hodinách."
+          title: "AI Lead-to-Appointment System",
+          subtitle: "Pre agentúry, reality a lokálne služby",
+          isMain: true,
+          problem: "Dopyty prichádzajú z viacerých kanálov (formulár, email, telefón). Reakcia je pomalá, follow-up neexistuje a veľká časť potenciálnych zákazníkov sa stratí.\n\nPo 5 minútach klesá šanca konverzie až 10×. Väčšina zákazníkov si vyberie toho, kto odpovie prvý.",
+          solution: "Formulár / email / zmeškaný hovor → AI spracuje a doplní údaje → automatická kvalifikácia a priorita → zápis do CRM alebo kalendára → okamžitá notifikácia zodpovednej osoby → potvrdenie ďalšieho kroku zákazníkovi",
+          results: [
+            "Reakcia v minútach, nie hodinách",
+            "Menej stratených dopytov",
+            "Viac dohodnutých stretnutí",
+            "Poriadok v CRM a kalendári"
+          ],
+          resultSummary: "Viac zákaziek bez zvyšovania marketingových nákladov.",
+          suitableFor: [
+            "Realitné kancelárie (obhliadky)",
+            "Agentúry a B2B služby",
+            "Lokálne firmy s 20+ dopytmi mesačne"
+          ]
         },
         {
-          title: "Extrakcia Dokumentov",
-          sector: "E-commerce a Operatíva",
-          problem: "Dáta z dokladov sú v prílohách. Prepisovanie je pomalé a náchylné na chyby.",
-          solution: "Príloha → AI extrakcia → validácia (pravidlá, duplicity) → export do účtovníctva/ERP → uloženie do úložiska.",
-          result: "Menej chýb. Rýchlejšie spracovanie. Auditná stopa."
+          title: "Call Recovery & Appointment Confirmation",
+          subtitle: "Voliteľné rozšírenie systému",
+          isMain: false,
+          problem: "Zmeškaný hovor a nepotvrdený termín znamenajú stratené peniaze.",
+          solution: "Automatické spätné volanie pri zmeškanom hovore\nPotvrdenie alebo presun termínu\nZápis do kalendára\nNotifikácia majiteľa / recepcie",
+          results: [
+            "Menej zmeškaných príležitostí",
+            "Menej no-show",
+            "Viac obsadených termínov"
+          ],
+          note: "Žiadny cold calling. Len práca s existujúcimi dopytmi."
         }
       ]
     },

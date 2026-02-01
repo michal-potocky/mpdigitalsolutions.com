@@ -28,10 +28,14 @@ export interface Content {
     subtitle: string;
     cases: {
       title: string;
-      sector: string;
+      subtitle?: string;
+      isMain?: boolean;
       problem: string;
       solution: string;
-      result: string;
+      results: string[];
+      resultSummary?: string;
+      suitableFor?: string[];
+      note?: string;
     }[];
   };
   services: {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { content as contentDictionary } from './content';
 import { Language } from './types';
 
@@ -13,21 +14,31 @@ import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
-const App: React.FC = () => {
-  // Simple state for language - defaults to English
-  const [lang, setLang] = useState<Language>('en');
+// Pages
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
-  // Basic scroll restoration on reload
+// Scroll to top on route change
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [pathname]);
 
-  const content = contentDictionary[lang];
+  return null;
+};
 
+// Home page component
+const HomePage: React.FC<{
+  content: typeof contentDictionary.en;
+  lang: Language;
+  setLang: (lang: Language) => void;
+}> = ({ content, lang, setLang }) => {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-brand-500 selection:text-white">
       <Header content={content.nav} lang={lang} setLang={setLang} />
-      
+
       <main className="relative">
         <Hero content={content.hero} />
         <Proof content={content.proof} />
@@ -40,6 +51,30 @@ const App: React.FC = () => {
 
       <Footer content={content.footer} />
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  // Simple state for language - defaults to English
+  const [lang, setLang] = useState<Language>('en');
+
+  const content = contentDictionary[lang];
+
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage content={content} lang={lang} setLang={setLang} />} />
+        <Route
+          path="/privacy"
+          element={<PrivacyPolicy content={content.legalPages} footerContent={content.footer} />}
+        />
+        <Route
+          path="/terms"
+          element={<TermsOfService content={content.legalPages} footerContent={content.footer} />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

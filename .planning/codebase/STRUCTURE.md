@@ -1,6 +1,6 @@
 # Codebase Structure
 
-**Analysis Date:** 2026-01-23
+**Analysis Date:** 2026-02-01
 
 ## Directory Layout
 
@@ -79,10 +79,10 @@ mpdigitalsolutions/
 - `components/Proof.tsx`: Social proof / expectations section
 - `components/Technologies.tsx`: Tech stack display
 - `components/UseCases.tsx`: Grid of use case cards
-- `components/HowItWorks.tsx`: Process/phase breakdown
+- `components/HowItWorks.tsx`: 3-phase process breakdown (Discover, Build, Launch) with responsive grid
 - `components/FAQ.tsx`: Expandable FAQ items
-- `components/ContactForm.tsx`: Lead capture form with success state
-- `components/Footer.tsx`: Footer with links and copyright
+- `components/ContactForm.tsx`: Lead capture form (name, email, company, employees, timeline, message)
+- `components/Footer.tsx`: Footer with LinkedIn link, email, legal links, copyright
 - `components/Services.tsx`: Service offerings (if used)
 
 **Presentation - Pages:**
@@ -183,4 +183,4 @@ mpdigitalsolutions/
 
 ---
 
-*Structure analysis: 2026-01-23*
+*Structure analysis: 2026-02-01*

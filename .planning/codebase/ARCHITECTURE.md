@@ -1,6 +1,6 @@
 # Architecture
 
-**Analysis Date:** 2026-01-23
+**Analysis Date:** 2026-02-01
 
 ## Pattern Overview
 
@@ -98,6 +98,12 @@
 - Examples: Hero, Proof, UseCases, Technologies, HowItWorks, FAQ, ContactForm, Footer
 - Pattern: Each wraps content in section element with consistent styling, accepts Content subset
 
+**Dynamic Phase Pattern (HowItWorks):**
+- Purpose: Render variable number of process phases from data
+- Pattern: `phases` array in content with optional fields (whatWeDo, steps, extra)
+- Layout: 3-column grid on desktop (lg:grid-cols-3), stacked on mobile
+- Each phase conditionally renders sections based on data presence
+
 **Scroll-to-Section Pattern:**
 - Purpose: Single-page navigation without full page reload
 - Examples: Header nav links, CTA buttons
@@ -138,6 +144,8 @@
 - ContactForm uses optimistic UI (fake 1500ms delay before success state)
 - No actual API calls; success message hardcoded
 - No validation error handling beyond HTML5 required attribute
+- Form fields: Name, Email, Company, Employee Count, Project Timeline, Message, Consent
+- Contact email: michal@mpdigitalsolutions.com
 
 ## Cross-Cutting Concerns
 
@@ -170,4 +178,4 @@
 
 ---
 
-*Architecture analysis: 2026-01-23*
+*Architecture analysis: 2026-02-01*

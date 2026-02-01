@@ -58,23 +58,17 @@ export interface Content {
   };
   howItWorks: {
     title: string;
-    phase1: {
-      title: string;
-      step1: {
-        title: string;
-        bullets: string[];
-      };
-      step2: {
-        title: string;
-        bullets: string[];
-      };
-      cta: string;
-    };
-    phase2: {
+    cta: string;
+    phases: {
       title: string;
       subtitle: string;
-      steps: string[];
-    };
+      whatWeDoLabel: string;
+      whatWeDo: string[];
+      stepsLabel?: string;
+      steps?: { title: string; bullets?: string[] }[];
+      extraLabel?: string;
+      extra?: string[];
+    }[];
   };
   youtube: {
     title: string;

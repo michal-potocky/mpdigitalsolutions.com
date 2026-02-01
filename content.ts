@@ -107,34 +107,84 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     howItWorks: {
       title: "How We Work",
-      phase1: {
-        title: "PHASE 1 — ANALYSIS",
-        step1: {
-          title: "Intro Call (10–15 min, no video)",
-          bullets: [
-            "Goal: Understand the situation and decide if it makes sense to go deeper.",
-            "Output: Scheduling the deep-dive audit."
+      cta: "BOOK INTRO CALL →",
+      phases: [
+        {
+          title: "PHASE 1 — DISCOVER & DIAGNOSE",
+          subtitle: "We understand your situation and propose a solution",
+          whatWeDoLabel: "What we do",
+          whatWeDo: [
+            "Map your current processes and tools",
+            "Identify the biggest bottlenecks",
+            "Propose a specific solution with estimated impact"
+          ],
+          stepsLabel: "How it works",
+          steps: [
+            {
+              title: "Intro Call (10–15 min, no video)",
+              bullets: [
+                "Goal: Understand the situation and decide if it makes sense to go deeper",
+                "Output: Scheduling the deep-dive audit"
+              ]
+            },
+            {
+              title: "Free Audit (45–60 min, video)",
+              bullets: [
+                "Goal: System mapping, technical review of tools",
+                "Output: Within 3 days, a PDF overview of the proposed solution and price estimate"
+              ]
+            }
           ]
         },
-        step2: {
-          title: "Free Audit (45–60 min, video)",
-          bullets: [
-            "Goal: System mapping, Technical review of tools.",
-            "Output: Within 3 days, a PDF overview of the proposed solution and price estimate."
+        {
+          title: "PHASE 2 — DESIGN, BUILD & VALIDATE",
+          subtitle: "We build and test the solution",
+          whatWeDoLabel: "What we do",
+          whatWeDo: [
+            "Design the workflow architecture",
+            "Develop and integrate automations",
+            "Test on real data"
+          ],
+          stepsLabel: "Steps",
+          steps: [
+            {
+              title: "Development & Integration",
+              bullets: [
+                "Ongoing communication — no surprises",
+                "Iterative approach — feedback after every step"
+              ]
+            },
+            {
+              title: "Rigorous Testing",
+              bullets: [
+                "Testing on real data and scenarios"
+              ]
+            },
+            {
+              title: "Deployment & Training",
+              bullets: [
+                "Full documentation for every workflow"
+              ]
+            }
           ]
         },
-        cta: "BOOK INTRO CALL →"
-      },
-      phase2: {
-        title: "PHASE 2 — DEVELOPMENT",
-        subtitle: "Execution & Handoff",
-        steps: [
-          "Development & Integration",
-          "Rigorous Testing",
-          "Deployment & Training",
-          "Maintenance & Improvements (Optional)"
-        ]
-      }
+        {
+          title: "PHASE 3 — LAUNCH, MONITOR & OPTIMIZE",
+          subtitle: "We launch, monitor, and improve",
+          whatWeDoLabel: "What we do",
+          whatWeDo: [
+            "Deploy the solution to production",
+            "Monitor performance and reliability",
+            "Optimize based on real results"
+          ],
+          extraLabel: "Then",
+          extra: [
+            "Maintenance & Improvements (optional)",
+            "Expand with additional automations as needed",
+            "Hand off documentation to your team"
+          ]
+        }
+      ]
     },
     youtube: {
       title: "Learn From Our Videos",
@@ -386,34 +436,84 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     howItWorks: {
       title: "Ako pracujeme",
-      phase1: {
-        title: "FÁZA 1 — ANALÝZA",
-        step1: {
-          title: "Úvodný call (10–15 min, bez videa)",
-          bullets: [
-            "Cieľ: Pochopiť situáciu a rozhodnúť, či má zmysel ísť hlbšie.",
-            "Výstup: Naplánovanie hĺbkového auditu."
+      cta: "OBJEDNAŤ ÚVODNÝ CALL →",
+      phases: [
+        {
+          title: "FÁZA 1 — DISCOVER & DIAGNOSE",
+          subtitle: "Pochopíme vašu situáciu a navrhneme riešenie",
+          whatWeDoLabel: "Čo robíme",
+          whatWeDo: [
+            "Zmapujeme vaše súčasné procesy a nástroje",
+            "Identifikujeme najväčšie úzke miesta",
+            "Navrhneme konkrétne riešenie s odhadom prínosu"
+          ],
+          stepsLabel: "Ako to prebieha",
+          steps: [
+            {
+              title: "Úvodný call (10–15 min, bez videa)",
+              bullets: [
+                "Cieľ: Pochopiť situáciu a rozhodnúť, či má zmysel ísť hlbšie",
+                "Výstup: Naplánovanie hĺbkového auditu"
+              ]
+            },
+            {
+              title: "Bezplatný audit (45–60 min, video)",
+              bullets: [
+                "Cieľ: Zmapovanie systému, technická kontrola nástrojov",
+                "Výstup: Do 3 dní prehľad navrhovaného riešenia v PDF a cenový odhad"
+              ]
+            }
           ]
         },
-        step2: {
-          title: "Bezplatný audit (45–60 min, video)",
-          bullets: [
-            "Cieľ: Zmapovanie systému, Technická kontrola nástrojov",
-            "Výstup: Do 3 dní prehľad navrhovaného riešenia v PDF a cenový odhad."
+        {
+          title: "FÁZA 2 — DESIGN, BUILD & VALIDATE",
+          subtitle: "Postavíme a otestujeme riešenie",
+          whatWeDoLabel: "Čo robíme",
+          whatWeDo: [
+            "Navrhneme architektúru workflow",
+            "Vyvinieme a integrujeme automatizácie",
+            "Testujeme na reálnych dátach"
+          ],
+          stepsLabel: "Kroky",
+          steps: [
+            {
+              title: "Vývoj a integrácia",
+              bullets: [
+                "Priebežná komunikácia — žiadne prekvapenia",
+                "Iteratívny prístup — spätná väzba po každom kroku"
+              ]
+            },
+            {
+              title: "Dôkladné testovanie",
+              bullets: [
+                "Testovanie na reálnych dátach a scenároch"
+              ]
+            },
+            {
+              title: "Nasadenie a zaškolenie",
+              bullets: [
+                "Plná dokumentácia ku každému workflow"
+              ]
+            }
           ]
         },
-        cta: "OBJEDNAŤ ÚVODNÝ CALL →"
-      },
-      phase2: {
-        title: "FÁZA 2 — VÝVOJ",
-        subtitle: "Exekúcia a odovzdanie",
-        steps: [
-          "Vývoj a integrácia",
-          "Dôkladné testovanie",
-          "Nasadenie a zaškolenie",
-          "Údržba a zlepšovanie (voliteľné)"
-        ]
-      }
+        {
+          title: "FÁZA 3 — LAUNCH, MONITOR & OPTIMIZE",
+          subtitle: "Spustíme, sledujeme a vylepšujeme",
+          whatWeDoLabel: "Čo robíme",
+          whatWeDo: [
+            "Nasadíme riešenie do produkcie",
+            "Monitorujeme výkon a spoľahlivosť",
+            "Optimalizujeme na základe reálnych výsledkov"
+          ],
+          extraLabel: "Potom",
+          extra: [
+            "Údržba a zlepšovanie (voliteľné)",
+            "Rozšírenie o ďalšie automatizácie podľa potrieb",
+            "Odovzdanie dokumentácie vášmu tímu"
+          ]
+        }
+      ]
     },
     youtube: {
       title: "Učte sa z našich videí",

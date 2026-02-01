@@ -27,7 +27,7 @@ const Footer: React.FC<FooterProps> = ({ content }) => {
           <div className="p-8 lg:p-12 flex flex-col justify-between">
             <span className="font-mono text-xs text-gray-500 uppercase mb-4 block">Connect</span>
             <div className="space-y-4">
-              <a href="#" className="flex items-center justify-between group">
+              <a href="https://www.linkedin.com/in/michal-potocky-a2b48b3a8/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between group">
                 <span className="text-lg font-bold uppercase group-hover:text-brand transition-colors">LinkedIn</span>
                 <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-brand" />
               </a>

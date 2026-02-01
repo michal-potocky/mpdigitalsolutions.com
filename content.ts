@@ -218,14 +218,6 @@ export const content: Record<'en' | 'sk', Content> = {
         name: "Full Name",
         email: "Work Email",
         company: "Company Name",
-        topic: "Interested Topic",
-        topicOptions: {
-          lead: "Lead Capture & Response Automation",
-          invoice: "Invoice & Document Processing",
-          crm: "CRM & Workspace Sync",
-          reporting: "Reporting Automation",
-          other: "Other / Not Sure Yet"
-        },
         employeeCount: "Number of Employees",
         employeeCountOptions: {
           one: "1",
@@ -248,7 +240,7 @@ export const content: Record<'en' | 'sk', Content> = {
         message: "How can we help? (Brief description)",
         consent: "I agree to the processing of my personal data for the purpose of the audit."
       },
-      submit: "Request Free Audit",
+      submit: "Book Intro Call",
       submitting: "Sending...",
       successTitle: "Request Received!",
       successMessage: "Thank you. We will review your details and get back to you within 1 business day with next steps.",
@@ -537,14 +529,6 @@ export const content: Record<'en' | 'sk', Content> = {
         name: "Celé meno",
         email: "Pracovný email",
         company: "Názov firmy",
-        topic: "Téma záujmu",
-        topicOptions: {
-          lead: "Zachytávanie leadov a automatizácia odpovedí",
-          invoice: "Spracovanie faktúr a dokumentov",
-          crm: "CRM a Workspace synchronizácia",
-          reporting: "Automatizácia reportingu",
-          other: "Iné / Zatiaľ neviem"
-        },
         employeeCount: "Počet zamestnancov",
         employeeCountOptions: {
           one: "1",
@@ -567,7 +551,7 @@ export const content: Record<'en' | 'sk', Content> = {
         message: "Ako môžeme pomôcť? (Krátky popis)",
         consent: "Súhlasím so spracovaním osobných údajov pre účely auditu."
       },
-      submit: "Požiadať o bezplatný audit",
+      submit: "Objednať úvodný call",
       submitting: "Odosielam...",
       successTitle: "Žiadosť prijatá!",
       successMessage: "Ďakujeme. Vaše údaje skontrolujeme a ozveme sa vám do 1 pracovného dňa s ďalšími krokmi.",

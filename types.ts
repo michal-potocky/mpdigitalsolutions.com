@@ -87,14 +87,6 @@ export interface Content {
       name: string;
       email: string;
       company: string;
-      topic: string;
-      topicOptions: {
-        lead: string;
-        invoice: string;
-        crm: string;
-        reporting: string;
-        other: string;
-      };
       employeeCount: string;
       employeeCountOptions: {
         one: string;

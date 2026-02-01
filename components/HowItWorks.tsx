@@ -41,19 +41,23 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ content }) => {
                 </p>
 
                 {/* What We Do */}
-                <div className="mb-8">
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
-                    {phase.whatWeDoLabel}
-                  </h4>
-                  <ul className="space-y-3">
-                    {phase.whatWeDo.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
-                        <CheckSquare className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {phase.whatWeDo && phase.whatWeDo.length > 0 && (
+                  <div className="mb-8">
+                    {phase.whatWeDoLabel && (
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
+                        {phase.whatWeDoLabel}
+                      </h4>
+                    )}
+                    <ul className="space-y-3">
+                      {phase.whatWeDo.map((item, i) => (
+                        <li key={i} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
+                          <CheckSquare className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {/* Steps (if present) */}
                 {phase.steps && phase.steps.length > 0 && (

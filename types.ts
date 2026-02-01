@@ -62,8 +62,8 @@ export interface Content {
     phases: {
       title: string;
       subtitle: string;
-      whatWeDoLabel: string;
-      whatWeDo: string[];
+      whatWeDoLabel?: string;
+      whatWeDo?: string[];
       stepsLabel?: string;
       steps?: { title: string; bullets?: string[] }[];
       extraLabel?: string;

@@ -106,18 +106,12 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     howItWorks: {
-      title: "How We Work",
-      cta: "BOOK INTRO CALL →",
+      title: "How It Works",
+      cta: "BOOK INTRO CALL",
       phases: [
         {
           title: "PHASE 1 — DISCOVER & DIAGNOSE",
           subtitle: "We understand your situation and propose a solution",
-          whatWeDoLabel: "What we do",
-          whatWeDo: [
-            "Map your current processes and tools",
-            "Identify the biggest bottlenecks",
-            "Propose a specific solution with estimated impact"
-          ],
           stepsLabel: "How it works",
           steps: [
             {
@@ -139,17 +133,13 @@ export const content: Record<'en' | 'sk', Content> = {
         {
           title: "PHASE 2 — DESIGN, BUILD & VALIDATE",
           subtitle: "We build and test the solution",
-          whatWeDoLabel: "What we do",
-          whatWeDo: [
-            "Design the workflow architecture",
-            "Develop and integrate automations",
-            "Test on real data"
-          ],
-          stepsLabel: "Steps",
+          stepsLabel: "What we do",
           steps: [
             {
               title: "Development & Integration",
               bullets: [
+                "Design the workflow architecture",
+                "Develop and integrate automations",
                 "Ongoing communication — no surprises",
                 "Iterative approach — feedback after every step"
               ]
@@ -435,18 +425,12 @@ export const content: Record<'en' | 'sk', Content> = {
       ]
     },
     howItWorks: {
-      title: "Ako pracujeme",
-      cta: "OBJEDNAŤ ÚVODNÝ CALL →",
+      title: "Ako to funguje",
+      cta: "OBJEDNAŤ ÚVODNÝ CALL",
       phases: [
         {
           title: "FÁZA 1 — DISCOVER & DIAGNOSE",
           subtitle: "Pochopíme vašu situáciu a navrhneme riešenie",
-          whatWeDoLabel: "Čo robíme",
-          whatWeDo: [
-            "Zmapujeme vaše súčasné procesy a nástroje",
-            "Identifikujeme najväčšie úzke miesta",
-            "Navrhneme konkrétne riešenie s odhadom prínosu"
-          ],
           stepsLabel: "Ako to prebieha",
           steps: [
             {
@@ -468,17 +452,13 @@ export const content: Record<'en' | 'sk', Content> = {
         {
           title: "FÁZA 2 — DESIGN, BUILD & VALIDATE",
           subtitle: "Postavíme a otestujeme riešenie",
-          whatWeDoLabel: "Čo robíme",
-          whatWeDo: [
-            "Navrhneme architektúru workflow",
-            "Vyvinieme a integrujeme automatizácie",
-            "Testujeme na reálnych dátach"
-          ],
-          stepsLabel: "Kroky",
+          stepsLabel: "Čo robíme",
           steps: [
             {
               title: "Vývoj a integrácia",
               bullets: [
+                "Navrhneme architektúru workflow",
+                "Vyvinieme a integrujeme automatizácie",
                 "Priebežná komunikácia — žiadne prekvapenia",
                 "Iteratívny prístup — spätná väzba po každom kroku"
               ]

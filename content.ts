@@ -213,7 +213,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     contact: {
       title: "Start Your Free Audit",
-      subtitle: "Fill out the form below. We promise a reply within 1 business day.",
+      subtitle: "A short intro call. No commitment. No selling. Just facts.",
       fields: {
         name: "Full Name",
         email: "Work Email",
@@ -524,7 +524,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     contact: {
       title: "Začnite auditom zadarmo",
-      subtitle: "Vyplňte formulár nižšie. Sľubujeme odpoveď do 1 pracovného dňa.",
+      subtitle: "Krátky úvodný call. Bez záväzkov. Bez predaja. Len fakty.",
       fields: {
         name: "Celé meno",
         email: "Pracovný email",

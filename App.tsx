@@ -42,10 +42,10 @@ const HomePage: React.FC<{
       <main className="relative">
         <Hero content={content.hero} />
         <Proof content={content.proof} />
-        <Technologies content={content.technologies} />
         <UseCases content={content.useCases} />
         <HowItWorks content={content.howItWorks} />
         <FAQ content={content.faq} />
+        <Technologies content={content.technologies} />
         <ContactForm content={content.contact} />
       </main>
 

@@ -10,7 +10,7 @@ export const content: Record<'en' | 'sk', Content> = {
     },
     hero: {
       headline: "AUTOMATE USING AI [SCALE] GROW",
-      subheadline: "We integrate custom AI automations for businesses and agencies that bring new clients and save time. Professional, direct, and outcome-oriented.",
+      subheadline: "We integrate custom AI automations for companies and agencies that improve the conversion of inquiries into appointments.",
       ctaPrimary: "Get a Free Audit",
       ctaSecondary: "See Use Cases",
       bullets: [
